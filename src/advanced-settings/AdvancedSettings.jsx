@@ -177,7 +177,7 @@ const AdvancedSettings = ({ intl, courseId }) => {
                     <div className="small">
                       <FormattedMessage
                         id="course-authoring.advanced-settings.policies.description"
-                        defaultMessage="{notice} Do not modify these policies unless you are familiar with their purpose."
+                        defaultMessage="{notice} No modifique estas políticas a menos que esté familiarizado con su propósito."
                         values={{ notice: <strong>Warning:  </strong> }}
                       />
                     </div>
