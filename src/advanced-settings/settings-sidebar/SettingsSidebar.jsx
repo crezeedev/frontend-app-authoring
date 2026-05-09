@@ -27,8 +27,8 @@ const SettingsSidebar = ({ intl, courseId, proctoredExamSettingsUrl }) => (
     <p className="help-sidebar-about-descriptions">
       <FormattedMessage
         id="course-authoring.advanced-settings.about.description-3"
-        defaultMessage="{notice} When you enter strings as policy values, ensure that you use double quotation marks (“) around the string. Do not use single quotation marks (‘)."
-        values={{ notice: <strong>Note:</strong> }}
+        defaultMessage="{notice} Cuando ingreses cadenas como valores de política, asegúrate de usar comillas dobles (“) alrededor de la cadena. No uses comillas simples (‘)."
+        values={{ notice: <strong>Nota:</strong> }}
       />
     </p>
   </HelpSidebar>
