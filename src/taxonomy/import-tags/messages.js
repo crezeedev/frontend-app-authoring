@@ -41,19 +41,19 @@ const messages = defineMessages({
   },
   importWizardStepExportCSVButton: {
     id: "course-authoring.import-tags.wizard.step-export.button-csv",
-    defaultMessage: "CSV file",
+    defaultMessage: "Archivo CSV",
   },
   importWizardStepExportJSONButton: {
     id: "course-authoring.import-tags.wizard.step-export.button-json",
-    defaultMessage: "JSON file",
+    defaultMessage: "Archivo JSON",
   },
   importWizardStepUploadTitle: {
     id: "course-authoring.import-tags.wizard.step-upload.title",
-    defaultMessage: "Upload file",
+    defaultMessage: "Subir archivo",
   },
   importWizardStepUploadClearFile: {
     id: "course-authoring.import-tags.wizard.step-upload.clear-file",
-    defaultMessage: "Clear file",
+    defaultMessage: "Borrar archivo",
   },
   importWizardStepUploadBody: {
     id: "course-authoring.import-tags.wizard.step-upload.body",
@@ -66,8 +66,8 @@ const messages = defineMessages({
   importWizardStepReuploadBody: {
     id: "course-authoring.import-tags.wizard.step-reupload.body",
     defaultMessage:
-      "You may use any spreadsheet tool (for CSV files), or any text editor (for JSON files) to create " +
-      "the file that you wish to import." +
+      "Puedes usar cualquier hoja de cálculo (para archivos CSV) o cualquier editor de texto (para archivos JSON) para crear " +
+      "el archivo que deseas importar." +
       "{br}Una vez que el archivo esté listo para ser importado, arrástrelo y suéltelo en el cuadro de abajo, o haga clic para cargarlo.",
   },
   csvTemplateTitle: {
