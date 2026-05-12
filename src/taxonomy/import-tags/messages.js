@@ -162,6 +162,14 @@ const messages = defineMessages({
     id: "course-authoring.import-tags.error-alert.title",
     defaultMessage: "Import error",
   },
+  dropzoneTitle: {
+    id: "course-authoring.import-files.dropzone.title",
+    defaultMessage: "Arrastra y suelta tu archivo aquí o haz clic para subirlo",
+  },
+  dropzoneDescription: {
+    id: "course-authoring.import-files.dropzone.description",
+    defaultMessage: "Sube archivos CSV o JSON (Máximo 100MB)",
+  },
 });
 
 export default messages;

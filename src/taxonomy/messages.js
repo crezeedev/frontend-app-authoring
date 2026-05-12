@@ -49,14 +49,7 @@ const messages = defineMessages({
     id: "course-authoring.taxonomy-list.alert.dismiss",
     defaultMessage: "Descartar",
   },
-  dropzoneTitle: {
-    id: "course-authoring.import-files.dropzone.title",
-    defaultMessage: "Arrastra y suelta tu archivo aquí o haz clic para subirlo",
-  },
-  dropzoneDescription: {
-    id: "course-authoring.import-files.dropzone.description",
-    defaultMessage: "Sube archivos CSV o JSON (Máximo 100MB)",
-  },
+
   importInProgressAlertDescription: {
     id: "course-authoring.import-tags.prompt.in-progress",
     defaultMessage:
