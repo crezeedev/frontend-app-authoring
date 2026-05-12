@@ -27,7 +27,7 @@ const messages = defineMessages({
   },
   orgInputSelectDefaultValue: {
     id: "course-authoring.taxonomy-list.select.org.default",
-    defaultMessage: "All taxonomies",
+    defaultMessage: "Todas las taxonomías",
   },
   orgAllValue: {
     id: "course-authoring.taxonomy-list.select.org.all",
@@ -39,7 +39,7 @@ const messages = defineMessages({
   },
   usageLoadingMessage: {
     id: "course-authoring.taxonomy-list.spinner.loading",
-    defaultMessage: "Loading",
+    defaultMessage: "Cargando",
   },
   taxonomyDeleteToast: {
     id: "course-authoring.taxonomy-list.toast.delete",
