@@ -1,30 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
 import {
-  Container, Button, Layout, StatefulButton, TransitionReplace,
-} from '@openedx/paragon';
-import { CheckCircle, Info, Warning } from '@openedx/paragon/icons';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-import Placeholder from '../editors/Placeholder';
+  Container,
+  Button,
+  Layout,
+  StatefulButton,
+  TransitionReplace,
+} from "@openedx/paragon";
+import { CheckCircle, Info, Warning } from "@openedx/paragon/icons";
+import {
+  FormattedMessage,
+  injectIntl,
+  intlShape,
+} from "@edx/frontend-platform/i18n";
+import Placeholder from "../editors/Placeholder";
 
-import AlertProctoringError from '../generic/AlertProctoringError';
-import { useModel } from '../generic/model-store';
-import InternetConnectionAlert from '../generic/internet-connection-alert';
-import { parseArrayOrObjectValues } from '../utils';
-import { RequestStatus } from '../data/constants';
-import SubHeader from '../generic/sub-header/SubHeader';
-import AlertMessage from '../generic/alert-message';
-import { fetchCourseAppSettings, updateCourseAppSetting, fetchProctoringExamErrors } from './data/thunks';
+import AlertProctoringError from "../generic/AlertProctoringError";
+import { useModel } from "../generic/model-store";
+import InternetConnectionAlert from "../generic/internet-connection-alert";
+import { parseArrayOrObjectValues } from "../utils";
+import { RequestStatus } from "../data/constants";
+import SubHeader from "../generic/sub-header/SubHeader";
+import AlertMessage from "../generic/alert-message";
 import {
-  getCourseAppSettings, getSavingStatus, getProctoringExamErrors, getSendRequestErrors, getLoadingStatus,
-} from './data/selectors';
-import SettingCard from './setting-card/SettingCard';
-import SettingsSidebar from './settings-sidebar/SettingsSidebar';
-import validateAdvancedSettingsData from './utils';
-import messages from './messages';
-import ModalError from './modal-error/ModalError';
-import getPageHeadTitle from '../generic/utils';
+  fetchCourseAppSettings,
+  updateCourseAppSetting,
+  fetchProctoringExamErrors,
+} from "./data/thunks";
+import {
+  getCourseAppSettings,
+  getSavingStatus,
+  getProctoringExamErrors,
+  getSendRequestErrors,
+  getLoadingStatus,
+} from "./data/selectors";
+import SettingCard from "./setting-card/SettingCard";
+import SettingsSidebar from "./settings-sidebar/SettingsSidebar";
+import validateAdvancedSettingsData from "./utils";
+import messages from "./messages";
+import ModalError from "./modal-error/ModalError";
+import getPageHeadTitle from "../generic/utils";
 
 const AdvancedSettings = ({ intl, courseId }) => {
   const dispatch = useDispatch();
@@ -36,10 +52,14 @@ const AdvancedSettings = ({ intl, courseId }) => {
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [isQueryPending, setIsQueryPending] = useState(false);
   const [isEditableState, setIsEditableState] = useState(false);
-  const [hasInternetConnectionError, setInternetConnectionError] = useState(false);
+  const [hasInternetConnectionError, setInternetConnectionError] =
+    useState(false);
 
-  const courseDetails = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.headingTitle));
+  const courseDetails = useModel("courseDetails", courseId);
+  document.title = getPageHeadTitle(
+    courseDetails?.name,
+    intl.formatMessage(messages.headingTitle),
+  );
 
   useEffect(() => {
     dispatch(fetchCourseAppSettings(courseId));
@@ -58,12 +78,10 @@ const AdvancedSettings = ({ intl, courseId }) => {
       default: intl.formatMessage(messages.buttonSaveText),
       pending: intl.formatMessage(messages.buttonSavingText),
     },
-    disabledStates: ['pending'],
+    disabledStates: ["pending"],
   };
-  const {
-    proctoringErrors,
-    mfeProctoredExamSettingsUrl,
-  } = proctoringExamErrors;
+  const { proctoringErrors, mfeProctoredExamSettingsUrl } =
+    proctoringExamErrors;
 
   useEffect(() => {
     if (savingStatus === RequestStatus.SUCCESSFUL) {
@@ -71,9 +89,12 @@ const AdvancedSettings = ({ intl, courseId }) => {
       setShowSuccessAlert(true);
       setIsEditableState(false);
       setTimeout(() => setShowSuccessAlert(false), 15000);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
       showSaveSettingsPrompt(false);
-    } else if (savingStatus === RequestStatus.FAILED && !hasInternetConnectionError) {
+    } else if (
+      savingStatus === RequestStatus.FAILED &&
+      !hasInternetConnectionError
+    ) {
       setErrorFields(settingsWithSendErrors);
       showErrorModal(true);
     }
@@ -99,11 +120,19 @@ const AdvancedSettings = ({ intl, courseId }) => {
   };
 
   const handleSettingBlur = () => {
-    validateAdvancedSettingsData(editedSettings, setErrorFields, setEditedSettings);
+    validateAdvancedSettingsData(
+      editedSettings,
+      setErrorFields,
+      setEditedSettings,
+    );
   };
 
   const handleUpdateAdvancedSettingsData = () => {
-    const isValid = validateAdvancedSettingsData(editedSettings, setErrorFields, setEditedSettings);
+    const isValid = validateAdvancedSettingsData(
+      editedSettings,
+      setErrorFields,
+      setEditedSettings,
+    );
     if (isValid) {
       setIsQueryPending(true);
     } else {
@@ -120,7 +149,12 @@ const AdvancedSettings = ({ intl, courseId }) => {
 
   const handleQueryProcessing = () => {
     setShowSuccessAlert(false);
-    dispatch(updateCourseAppSetting(courseId, parseArrayOrObjectValues(editedSettings)));
+    dispatch(
+      updateCourseAppSetting(
+        courseId,
+        parseArrayOrObjectValues(editedSettings),
+      ),
+    );
   };
 
   const handleManuallyChangeClick = (setToState) => {
@@ -132,13 +166,17 @@ const AdvancedSettings = ({ intl, courseId }) => {
     <>
       <Container size="xl" className="advanced-settings px-4">
         <div className="setting-header mt-5">
-          {(proctoringErrors?.length > 0) && (
+          {proctoringErrors?.length > 0 && (
             <AlertProctoringError
               icon={Info}
               proctoringErrorsData={proctoringErrors}
               aria-hidden="true"
-              aria-labelledby={intl.formatMessage(messages.alertProctoringAriaLabelledby)}
-              aria-describedby={intl.formatMessage(messages.alertProctoringDescribedby)}
+              aria-labelledby={intl.formatMessage(
+                messages.alertProctoringAriaLabelledby,
+              )}
+              aria-describedby={intl.formatMessage(
+                messages.alertProctoringDescribedby,
+              )}
             />
           )}
           <TransitionReplace>
@@ -149,10 +187,16 @@ const AdvancedSettings = ({ intl, courseId }) => {
                 variant="success"
                 icon={CheckCircle}
                 title={intl.formatMessage(messages.alertSuccess)}
-                description={intl.formatMessage(messages.alertSuccessDescriptions)}
+                description={intl.formatMessage(
+                  messages.alertSuccessDescriptions,
+                )}
                 aria-hidden="true"
-                aria-labelledby={intl.formatMessage(messages.alertSuccessAriaLabelledby)}
-                aria-describedby={intl.formatMessage(messages.alertSuccessAriaDescribedby)}
+                aria-labelledby={intl.formatMessage(
+                  messages.alertSuccessAriaLabelledby,
+                )}
+                aria-describedby={intl.formatMessage(
+                  messages.alertSuccessAriaDescribedby,
+                )}
               />
             ) : null}
           </TransitionReplace>
@@ -178,22 +222,26 @@ const AdvancedSettings = ({ intl, courseId }) => {
                       <FormattedMessage
                         id="course-authoring.advanced-settings.policies.description"
                         defaultMessage="{notice} No modifique estas políticas a menos que esté familiarizado con su propósito."
-                        values={{ notice: <strong>Warning:  </strong> }}
+                        values={{ notice: <strong>Advertencia: </strong> }}
                       />
                     </div>
                     <div className="setting-items-deprecated-setting">
                       <Button
-                        variant={showDeprecated ? 'outline-brand' : 'tertiary'}
+                        variant={showDeprecated ? "outline-brand" : "tertiary"}
                         onClick={() => setShowDeprecated(!showDeprecated)}
                         size="sm"
                       >
                         <FormattedMessage
                           id="course-authoring.advanced-settings.deprecated.button.text"
-                          defaultMessage="{visibility} deprecated settings"
+                          defaultMessage="{visibility} configuraciones obsoletas"
                           values={{
-                            visibility:
-                                    showDeprecated ? intl.formatMessage(messages.deprecatedButtonHideText)
-                                      : intl.formatMessage(messages.deprecatedButtonShowText),
+                            visibility: showDeprecated
+                              ? intl.formatMessage(
+                                  messages.deprecatedButtonHideText,
+                                )
+                              : intl.formatMessage(
+                                  messages.deprecatedButtonShowText,
+                                ),
                           }}
                         />
                       </Button>
@@ -244,8 +292,12 @@ const AdvancedSettings = ({ intl, courseId }) => {
         <AlertMessage
           show={saveSettingsPrompt}
           aria-hidden={saveSettingsPrompt}
-          aria-labelledby={intl.formatMessage(messages.alertWarningAriaLabelledby)}
-          aria-describedby={intl.formatMessage(messages.alertWarningAriaDescribedby)}
+          aria-labelledby={intl.formatMessage(
+            messages.alertWarningAriaLabelledby,
+          )}
+          aria-describedby={intl.formatMessage(
+            messages.alertWarningAriaDescribedby,
+          )}
           role="dialog"
           actions={[
             !isQueryPending && (
@@ -256,7 +308,7 @@ const AdvancedSettings = ({ intl, courseId }) => {
             <StatefulButton
               key="statefulBtn"
               onClick={handleUpdateAdvancedSettingsData}
-              state={isQueryPending ? RequestStatus.PENDING : 'default'}
+              state={isQueryPending ? RequestStatus.PENDING : "default"}
               {...updateSettingsButtonState}
             />,
           ].filter(Boolean)}
