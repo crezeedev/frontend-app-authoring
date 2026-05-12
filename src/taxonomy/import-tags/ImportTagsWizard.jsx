@@ -126,8 +126,8 @@ const UploadStep = ({ file, setFile, importPlanError, reimport }) => {
         <div>
           {!file ? (
             <Dropzone
-              label="Arrastra y suelta tu archivo aquí o haz clic para subirlo"
-              helperText="Sube archivos CSV o JSON (Máx. 100MB)"
+              label={intl.formatMessage(messages.dropzoneTitle)}
+              helperText={intl.formatMessage(messages.dropzoneDescription)}
               maxSize={100 * 1024 * 1024 /* 100MB */}
               accept={{
                 "text/csv": [".csv"],
