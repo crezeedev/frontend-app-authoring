@@ -4,19 +4,19 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   taxonomyDetailsHeader: {
     id: 'course-authoring.taxonomy-detail.side-card.header',
-    defaultMessage: 'Taxonomy details',
+    defaultMessage: 'Detalles de la taxonomía',
   },
   taxonomyDetailsName: {
     id: 'course-authoring.taxonomy-detail.side-card.name',
-    defaultMessage: 'Title',
+    defaultMessage: 'Título',
   },
   taxonomyDetailsDescription: {
     id: 'course-authoring.taxonomy-detail.side-card.description',
-    defaultMessage: 'Description',
+    defaultMessage: 'Descripción',
   },
   taxonomyDetailsExportID: {
     id: 'course-authoring.taxonomy-detail.side-card.exportID',
-    defaultMessage: 'Export ID',
+    defaultMessage: 'ID de exportación',
   },
 });
 
