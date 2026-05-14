@@ -4,7 +4,7 @@ const messages = defineMessages({
 
   selectTypeTitle: {
     id: 'authoring.problemEditor.selectType.title',
-    defaultMessage: 'Select problem type',
+    defaultMessage: 'Seleccionar tipo de problema',
     description: 'Title for select problem type modal',
   },
   cancelButtonLabel: {
