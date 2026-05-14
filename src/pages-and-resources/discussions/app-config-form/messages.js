@@ -94,7 +94,7 @@ const messages = defineMessages({
   // App names
   "appName-piazza": {
     id: "authoring.discussions.appConfigForm.appName-piazza",
-    defaultMessage: "Piazza",
+    defaultMessage: "Plaza",
     description: "The name of the Piazza app.",
   },
   "appName-yellowdig": {
@@ -104,17 +104,17 @@ const messages = defineMessages({
   },
   "appName-inscribe": {
     id: "authoring.discussions.appConfigForm.appName-inscribe",
-    defaultMessage: "InScribe",
+    defaultMessage: "Inscribir",
     description: "The name of the inscribe app.",
   },
   "appName-discourse": {
     id: "authoring.discussions.appConfigForm.appName-discourse",
-    defaultMessage: "Discourse",
+    defaultMessage: "Discurso",
     description: "The name of the discourse app.",
   },
   "appName-ed-discuss": {
     id: "authoring.discussions.appConfigForm.appName-ed-discuss",
-    defaultMessage: "Ed Discussion",
+    defaultMessage: "Discusión educativa",
     description: "The name of the Ed Discussion app.",
   },
   "appName-legacy": {
@@ -124,7 +124,7 @@ const messages = defineMessages({
   },
   "appName-openedx": {
     id: "authoring.discussions.appConfigForm.appName-openedx",
-    defaultMessage: "edX (new)",
+    defaultMessage: "edX (nuevo)",
     description: "The name of the new edX Discussions app.",
   },
   divisionByGroup: {

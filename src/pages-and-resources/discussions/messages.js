@@ -8,7 +8,7 @@ const messages = defineMessages({
   },
   configure: {
     id: 'authoring.discussions.configure',
-    defaultMessage: 'Configure discussions',
+    defaultMessage: 'Configurar discusiones',
   },
   configureApp: {
     id: 'authoring.discussions.configure.app',
@@ -41,7 +41,7 @@ const messages = defineMessages({
   },
   providerSelection: {
     id: 'authoring.discussions.providerSelection',
-    defaultMessage: 'Provider selection',
+    defaultMessage: 'Selección de proveedores',
     description: 'A label for the first step of a wizard where the user chooses a discussion tool to configure.',
   },
   Incomplete: {
