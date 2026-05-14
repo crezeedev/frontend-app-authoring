@@ -3,22 +3,22 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.ora.heading',
-    defaultMessage: 'Configure Flexible Peer Grading',
+    defaultMessage: 'Configurar la evaluación entre pares flexible',
     description: 'Title for the modal dialog header',
   },
   ORASettingsHelpLink: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.link',
-    defaultMessage: 'Learn more about open response assessment settings',
+    defaultMessage: 'Obtenga más información sobre los entornos de evaluación de respuesta abierta.',
     description: 'Descriptive text for the hyperlink to the docs site',
   },
   enableFlexPeerGradeLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.label',
-    defaultMessage: 'Flex Peer Grading',
+    defaultMessage: 'Calificación por pares flexible',
     description: 'Label for form switch',
   },
   enableFlexPeerGradeHelp: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.help',
-    defaultMessage: 'Turn on Flexible Peer Grading for all open response assessments in the course with peer grading.',
+    defaultMessage: 'Active la opción de evaluación flexible entre pares para todas las evaluaciones de respuesta abierta del curso que cuente con este sistema.',
     description: 'Help text describing what happens when the switch is enabled',
   },
   enabledBadgeLabel: {
