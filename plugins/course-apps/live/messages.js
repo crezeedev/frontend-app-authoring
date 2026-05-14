@@ -3,22 +3,22 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'authoring.pagesAndResources.live.enableLive.heading',
-    defaultMessage: 'Configure Live',
+    defaultMessage: 'Configurar en vivo',
     description: 'Heading for live configuration',
   },
   enableLiveLabel: {
     id: 'authoring.pagesAndResources.live.enableLive.label',
-    defaultMessage: 'Live',
+    defaultMessage: 'Vivir',
     description: 'Title for configuration',
   },
   enableLiveHelp: {
     id: 'authoring.pagesAndResources.live.enableLive.help',
-    defaultMessage: 'Schedule meetings and conduct live course sessions with learners.',
+    defaultMessage: 'Programar reuniones e impartir sesiones de cursos en directo con los alumnos.',
     description: 'Tells the purpose of live configuration',
   },
   enableLiveLink: {
     id: 'authoring.pagesAndResources.live.enableLive.link',
-    defaultMessage: 'Learn more about live',
+    defaultMessage: 'Obtén más información sobre la transmisión en vivo.',
     description: 'Link text that tells the user to learn about the live',
   },
   saveButton: {
@@ -38,7 +38,7 @@ const messages = defineMessages({
   },
   selectProvider: {
     id: 'authoring.live.selectProvider',
-    defaultMessage: 'Select a video conferencing tool',
+    defaultMessage: 'Seleccione una herramienta de videoconferencia',
     description: '',
   },
   formInstructions: {
@@ -93,7 +93,7 @@ const messages = defineMessages({
   },
   requestPiiSharingEnable: {
     id: 'authoring.live.requestPiiSharingEnable',
-    defaultMessage: 'This configuration will require sharing usernames and emails of learners and the course team with {provider}. To access the LTI configuration for {provider}, please request your edX project coordinator to get PII sharing enabled for this course.',
+    defaultMessage: 'Esta configuración requerirá compartir los nombres de usuario y correos electrónicos de los estudiantes y del equipo del curso con {provider}. Para acceder a la configuración LTI de {provider}, solicite a su coordinador de proyecto de edX que habilite el uso compartido de información personal identificable (PII) para este curso.',
     description: 'Tells the user that request edx project coordinator to enable the PII sharing to access the LTI configuration for a provider.',
   },
   general: {
@@ -113,7 +113,7 @@ const messages = defineMessages({
   },
   learnMore: {
     id: 'authoring.live.appDocInstructions.learnMoreLink',
-    defaultMessage: 'Learn more about {providerName}',
+    defaultMessage: 'Obtén más información sobre {providerName}',
     description: 'Application Document Instructions message for learn more links',
   },
   linkTextHeading: {
@@ -148,13 +148,13 @@ const messages = defineMessages({
   },
   requestPiiSharingEnableForBbb: {
     id: 'authoring.live.requestPiiSharingEnableForBbb',
-    defaultMessage: 'This configuration will require sharing usernames of learners and the course team with {provider}.',
+    defaultMessage: 'Esta configuración requerirá compartir los nombres de usuario de los alumnos y del equipo del curso con {proveedor}.',
     description: 'Tells the user that they require sharing usernames with the provider to use this feature',
   },
 
   piiSharingEnableHelpTextBbb: {
     id: 'authoring.live.piiSharingEnableHelpText',
-    defaultMessage: 'To enable this feature, contact your edX support team to enable PII sharing for this course.',
+    defaultMessage: 'Para habilitar esta función, comuníquese con su equipo de soporte de edX para habilitar el intercambio de información personal identificable (PII) para este curso.',
     description: 'Tells the user that request edx project coordinator to enable the PII sharing to access the LTI configuration for a provider.',
   },
 
