@@ -39,4 +39,4 @@ export const ROLE_BUTTON_VARIANT = {
   [LibraryRole.Unknown]: 'danger',
 };
 
-export const EXAMPLE_USER_EMAIL = 'username@domain.com';
+export const EXAMPLE_USER_EMAIL = 'nombredeusuario@domain.com';
