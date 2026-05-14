@@ -224,7 +224,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Open Response',
+      display_name: 'Respuesta abierta',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
@@ -243,7 +243,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Problem',
+      display_name: 'Problema',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
