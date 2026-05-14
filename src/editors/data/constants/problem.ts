@@ -19,9 +19,9 @@ export type ProblemType = typeof ProblemTypeKeys[keyof typeof ProblemTypeKeys];
 
 export const ProblemTypes = StrictDict({
   [ProblemTypeKeys.SINGLESELECT]: {
-    title: 'Single select',
+    title: 'Selección única',
     preview: singleSelect,
-    previewDescription: 'Learners must select the correct answer from a list of possible options.',
+    previewDescription: 'Los estudiantes deben seleccionar la respuesta correcta de una lista de opciones posibles.',
     description: 'Enter your single select answers below and select which choices are correct. Learners must choose one correct answer.',
     helpLink: 'https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/exercises_tools/multiple_choice.html',
     prev: ProblemTypeKeys.TEXTINPUT,
@@ -30,9 +30,9 @@ export const ProblemTypes = StrictDict({
 
   },
   [ProblemTypeKeys.MULTISELECT]: {
-    title: 'Multi-select',
+    title: 'Selección múltiple',
     preview: multiSelect,
-    previewDescription: 'Learners must select all correct answers from a list of possible options.',
+    previewDescription: 'Los estudiantes deben seleccionar todas las respuestas correctas de una lista de opciones posibles.',
     description: 'Enter your multi select answers below and select which choices are correct. Learners must choose all correct answers.',
     helpLink: 'https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/exercises_tools/checkbox.html',
     next: ProblemTypeKeys.DROPDOWN,
@@ -40,9 +40,9 @@ export const ProblemTypes = StrictDict({
     template: basicOlxTemplates.multiSelect,
   },
   [ProblemTypeKeys.DROPDOWN]: {
-    title: 'Dropdown',
+    title: 'Desplegable',
     preview: dropdown,
-    previewDescription: 'Learners must select the correct answer from a list of possible options',
+    previewDescription: 'Los estudiantes deben seleccionar la respuesta correcta de una lista de opciones posibles.',
     description: 'Enter your dropdown answers below and select which choice is correct. Learners must select one correct answer.',
     helpLink: 'https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/exercises_tools/dropdown.html',
     next: ProblemTypeKeys.NUMERIC,
@@ -50,20 +50,20 @@ export const ProblemTypes = StrictDict({
     template: basicOlxTemplates.dropdown,
   },
   [ProblemTypeKeys.NUMERIC]: {
-    title: 'Numerical input',
+    title: 'Entrada numérica',
     preview: numericalInput,
-    previewDescription: 'Specify one or more correct numeric answers, submitted in a response field.',
-    description: 'Enter correct numerical input answers below. Learners must enter one correct answer.',
+    previewDescription: 'Especifique una o más respuestas numéricas correctas, enviadas en un campo de respuesta.',
+    description: 'Ingrese las respuestas correctas de entrada numérica a continuación. Los estudiantes deben ingresar una respuesta correcta.',
     helpLink: 'https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/exercises_tools/numerical_input.html',
     next: ProblemTypeKeys.TEXTINPUT,
     prev: ProblemTypeKeys.DROPDOWN,
     template: basicOlxTemplates.numeric,
   },
   [ProblemTypeKeys.TEXTINPUT]: {
-    title: 'Text input',
+    title: 'Entrada de texto',
     preview: textInput,
-    previewDescription: 'Specify one or more correct text answers, including numbers and special characters, submitted in a response field.',
-    description: 'Enter your text input answers below and select which choices are correct. Learners must enter one correct answer.',
+    previewDescription: 'Especifique una o más respuestas de texto correctas, incluyendo números y caracteres especiales, enviadas en un campo de respuesta.',
+    description: 'Ingrese sus respuestas de entrada de texto a continuación y seleccione cuáles son correctas. Los estudiantes deben ingresar una respuesta correcta.',
     helpLink: 'https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/exercises_tools/text_input.html',
     prev: ProblemTypeKeys.NUMERIC,
     next: ProblemTypeKeys.SINGLESELECT,
