@@ -3,22 +3,23 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.notes.heading',
-    defaultMessage: 'Configure notes',
+    defaultMessage: 'Notas de configuración',
   },
   enableNotesLabel: {
     id: 'course-authoring.pages-resources.notes.enable-notes.label',
-    defaultMessage: 'Notes',
+    defaultMessage: 'Notas',
   },
   enableNotesHelp: {
     id: 'course-authoring.pages-resources.notes.enable-notes.help',
-    defaultMessage: `Learners can access their notes either in the body of the
-    course of on a notes page. On the notes page, a learner can see all the
-    notes made during the course. The page also contains links to the location
-    of the notes in the course body.`,
+    defaultMessage: `Los estudiantes pueden acceder a sus apuntes 
+    tanto en el cuerpo del curso como en una página de apuntes. 
+    En esta página, pueden ver todos los apuntes que tomaron durante 
+    el curso. Además, incluye enlaces a la ubicación de los apuntes 
+    dentro del curso.`,
   },
   enableNotesLink: {
     id: 'course-authoring.pages-resources.notes.enable-notes.link',
-    defaultMessage: 'Learn more about notes',
+    defaultMessage: 'Aprende más sobre las notas',
   },
 });
 

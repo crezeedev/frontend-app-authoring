@@ -3,21 +3,21 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.calculator.heading',
-    defaultMessage: 'Configure calculator',
+    defaultMessage: 'Configurar calculadora',
   },
   enableCalculatorLabel: {
     id: 'course-authoring.pages-resources.calculator.enable-calculator.label',
-    defaultMessage: 'Calculator',
+    defaultMessage: 'Calculadora',
   },
   enableCalculatorHelp: {
     id: 'course-authoring.pages-resources.calculator.enable-calculator.help',
-    defaultMessage: `The calculator supports numbers, operators, constants,
-      functions, and other mathematical concepts. When enabled, an icon to
-      access the calculator appears on all pages in the body of your course.`,
+    defaultMessage: `La calculadora admite números, operadores, constantes, 
+    funciones y otros conceptos matemáticos. Cuando está activada, aparece 
+    un icono para acceder a ella en todas las páginas del curso.`,
   },
   enableCalculatorLink: {
     id: 'course-authoring.pages-resources.calculator.enable-calculator.link',
-    defaultMessage: 'Learn more about the calculator',
+    defaultMessage: 'Obtén más información sobre la calculadora.',
   },
 });
 
