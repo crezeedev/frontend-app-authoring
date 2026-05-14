@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.custom-pages.heading',
-    defaultMessage: 'Custom Pages',
+    defaultMessage: 'Páginas personalizadas',
   },
   errorAlertMessage: {
     id: 'course-authoring.custom-pages.errorAlert.message',
@@ -11,47 +11,52 @@ const messages = defineMessages({
   },
   note: {
     id: 'course-authoring.custom-pages.note',
-    defaultMessage: `Note: Pages are publicly visible. If users know the URL
-      of a page, they can view the page even if they are not registered for
-      or logged in to your course.`,
+    defaultMessage: `Nota: Las páginas son de acceso público. 
+    Si los usuarios conocen la URL de una página, pueden verla 
+    aunque no estén registrados ni hayan iniciado sesión en tu curso.`,
   },
   addPageHeaderLabel: {
     id: 'course-authoring.custom-pages.header.addPage.label',
-    defaultMessage: 'New page',
+    defaultMessage: 'Nueva página',
   },
   viewLiveLabel: {
     id: 'course-authoring.custom-pages.header.viewLive.label',
-    defaultMessage: 'View live',
+    defaultMessage: 'Ver en directo',
   },
   pageExplanationHeader: {
     id: 'course-authoring.custom-pages.pageExplanation.header',
-    defaultMessage: 'What are pages?',
+    defaultMessage: '¿Qué son las páginas?',
   },
   pageExplanationBody: {
     id: 'course-authoring.custom-pages.pageExplanation.body',
-    defaultMessage: `Pages are listed horizontally at the top of your course. Default pages (Home, Course, Discussion, Wiki, and Progress)
-      are followed by textbooks and custom pages that you create.`,
+    defaultMessage: `Las páginas se muestran horizontalmente 
+    en la parte superior del curso. A continuación, se muestran 
+    las páginas predeterminadas (Inicio, Curso, Foro de discusión, 
+    Wiki y Progreso), los libros de texto y las páginas personalizadas 
+    que usted cree.`,
   },
   customPagesExplanationHeader: {
     id: 'course-authoring.custom-pages.customPagesExplanation.header',
-    defaultMessage: 'Custom pages',
+    defaultMessage: 'Páginas personalizadas',
   },
   customPagesExplanationBody: {
     id: 'course-authoring.custom-pages.customPagesExplanation.body',
-    defaultMessage: `You can create and edit custom pages to probide students with additional course content. For example, you can create
-      pages for the grading policy, course slide, and a course calendar.`,
+    defaultMessage: `Puedes crear y editar páginas personalizadas para 
+    proporcionar a los estudiantes contenido adicional del curso. 
+    Por ejemplo, puedes crear páginas para la política de calificación, 
+    las diapositivas del curso y el calendario del curso.`,
   },
   studentViewExplanationHeader: {
     id: 'course-authoring.custom-pages.studentViewExplanation.header',
-    defaultMessage: 'How do pages look to students in my course?',
+    defaultMessage: '¿Cómo se ven las páginas a las estudiantes en mi curso?',
   },
   studentViewExplanationBody: {
     id: 'course-authoring.custom-pages.studentViewExplanation.body',
-    defaultMessage: 'Students see the default and custom pages at the top of your course and use the links to navigate.',
+    defaultMessage: 'Los estudiantes ven las páginas predeterminadas y personalizadas en la parte superior del curso y utilizan los enlaces para navegar.',
   },
   studentViewExampleButton: {
     id: 'course-authoring.custom-pages.studentViewExampleButton.label',
-    defaultMessage: 'See an example',
+    defaultMessage: 'Vea un ejemplo',
   },
   studentViewModalTitle: {
     id: 'course-authoring.custom-pages.studentViewModal.title',
@@ -79,7 +84,7 @@ const messages = defineMessages({
   },
   addPageBodyLabel: {
     id: 'course-authoring.custom-pages.body.addPage.label',
-    defaultMessage: 'Add a new page',
+    defaultMessage: 'Agregar una nueva página',
   },
   addingPageBodyLabel: {
     id: 'course-authoring.custom-pages.body.addingPage.label',
