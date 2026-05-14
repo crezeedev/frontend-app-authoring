@@ -148,7 +148,7 @@ const messages = defineMessages({
   },
   requestPiiSharingEnableForBbb: {
     id: 'authoring.live.requestPiiSharingEnableForBbb',
-    defaultMessage: 'Esta configuración requerirá compartir los nombres de usuario de los alumnos y del equipo del curso con {proveedor}.',
+    defaultMessage: 'Esta configuración requerirá compartir los nombres de usuario de los alumnos y del equipo del curso con {provider}.',
     description: 'Tells the user that they require sharing usernames with the provider to use this feature',
   },
 
