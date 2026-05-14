@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.wiki.heading',
-    defaultMessage: 'Configure wiki',
+    defaultMessage: 'Configurar wiki',
   },
   enableWikiLabel: {
     id: 'course-authoring.pages-resources.wiki.enable-wiki.label',
@@ -11,23 +11,21 @@ const messages = defineMessages({
   },
   enableWikiHelp: {
     id: 'course-authoring.pages-resources.wiki.enable-wiki.help',
-    defaultMessage: `The course wiki can be set up based on the needs of your
-    course. Common uses might include sharing answers to course FAQs, sharing
-    editable course information, or providing access to learner-created
-    resources.`,
+    defaultMessage: `La wiki del curso se puede configurar según las necesidades de su
+    curso. Algunos usos comunes incluyen compartir respuestas a las preguntas frecuentes del curso, compartir
+    información editable del curso o proporcionar acceso a recursos creados por los estudiantes.`,
   },
   enableWikiLink: {
     id: 'course-authoring.pages-resources.wiki.enable-wiki.link',
-    defaultMessage: 'Learn more about the wiki',
+    defaultMessage: 'Obtén más información sobre la wiki.',
   },
   enablePublicWikiLabel: {
     id: 'course-authoring.pages-resources.wiki.enable-public-wiki.label',
-    defaultMessage: 'Enable public wiki access',
+    defaultMessage: 'Habilitar el acceso público a la wiki',
   },
   enablePublicWikiHelp: {
     id: 'course-authoring.pages-resources.wiki.enable-public-wiki.help',
-    defaultMessage: `If enabled, any registered user can view the course wiki
-    even if they are not enrolled in the course`,
+    defaultMessage: `Si está habilitada, cualquier usuario registrado puede ver la wiki del curso aunque no esté matriculado en él.`,
   },
 });
 
