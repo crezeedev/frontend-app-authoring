@@ -18,14 +18,14 @@ import {
 export const UNIT_ICON_TYPES = ['video', 'other', 'vertical', 'problem', 'lock'];
 
 export const COMPONENT_TYPES = {
-  advanced: 'advanced',
-  discussion: 'discussion',
-  library: 'library',
+  advanced: 'avanzado',
+  discussion: 'discusión',
+  library: 'biblioteca',
   html: 'html',
-  openassessment: 'openassessment',
-  problem: 'problem',
+  openassessment: 'evaluación abierta',
+  problem: 'problema',
   video: 'video',
-  dragAndDrop: 'drag-and-drop-v2',
+  dragAndDrop: 'arrastrar-y-soltar-v2',
 };
 
 export const UNIT_TYPE_ICONS_MAP: Record<string, React.ComponentType> = {
