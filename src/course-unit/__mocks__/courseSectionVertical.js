@@ -57,7 +57,7 @@ module.exports = {
   ],
   component_templates: [
     {
-      type: 'advanced',
+      type: 'avanzado',
       templates: [
         {
           display_name: 'Annotation',
@@ -76,7 +76,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Advanced',
+      display_name: 'Avanzado',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
@@ -84,7 +84,7 @@ module.exports = {
       },
     },
     {
-      type: 'discussion',
+      type: 'discusión',
       templates: [
         {
           display_name: 'Discussion',
@@ -103,7 +103,7 @@ module.exports = {
       },
     },
     {
-      type: 'library',
+      type: 'biblioteca',
       templates: [
         {
           display_name: 'Randomized Content Block',
@@ -173,7 +173,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Text',
+      display_name: 'Texto',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
@@ -181,7 +181,7 @@ module.exports = {
       },
     },
     {
-      type: 'openassessment',
+      type: 'evaluación abierta',
       templates: [
         {
           display_name: 'Peer Assessment Only',
