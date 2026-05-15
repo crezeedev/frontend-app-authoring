@@ -60,7 +60,7 @@ module.exports = {
       type: 'avanzado',
       templates: [
         {
-          display_name: 'Annotation',
+          display_name: 'Anotación',
           category: 'annotatable',
           boilerplate_name: null,
           hinted: false,
@@ -87,7 +87,7 @@ module.exports = {
       type: 'discusión',
       templates: [
         {
-          display_name: 'Discussion',
+          display_name: 'Discusión',
           category: 'discussion',
           boilerplate_name: null,
           hinted: false,
@@ -95,7 +95,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Discussion',
+      display_name: 'Discusión',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
@@ -114,7 +114,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Library Content',
+      display_name: 'Contenido de la biblioteca',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
@@ -125,7 +125,7 @@ module.exports = {
       type: 'html',
       templates: [
         {
-          display_name: 'Text',
+          display_name: 'Texto',
           category: 'html',
           boilerplate_name: null,
           hinted: false,
@@ -133,7 +133,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Raw HTML',
+          display_name: 'HTML sin procesar',
           category: 'html',
           boilerplate_name: 'raw.yaml',
           hinted: false,
@@ -141,7 +141,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Zooming Image Tool',
+          display_name: 'Herramienta de zoom de imagen',
           category: 'html',
           boilerplate_name: 'zooming_image.yaml',
           hinted: false,
@@ -149,7 +149,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'IFrame Tool',
+          display_name: 'Herramienta IFrame',
           category: 'html',
           boilerplate_name: 'iframe.yaml',
           hinted: false,
@@ -157,7 +157,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Anonymous User ID',
+          display_name: 'ID de usuario anónimo',
           category: 'html',
           boilerplate_name: 'anon_user_id.yaml',
           hinted: false,
@@ -165,7 +165,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Announcement',
+          display_name: 'Anuncio',
           category: 'html',
           boilerplate_name: 'announcement.yaml',
           hinted: false,
@@ -184,7 +184,7 @@ module.exports = {
       type: 'evaluación abierta',
       templates: [
         {
-          display_name: 'Peer Assessment Only',
+          display_name: 'Solo evaluación entre compañeros',
           category: 'openassessment',
           boilerplate_name: 'peer-assessment',
           hinted: false,
@@ -192,7 +192,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Self Assessment Only',
+          display_name: 'Autoevaluación solamente',
           category: 'openassessment',
           boilerplate_name: 'self-assessment',
           hinted: false,
@@ -200,7 +200,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Staff Assessment Only',
+          display_name: 'Solo evaluación del personal',
           category: 'openassessment',
           boilerplate_name: 'staff-assessment',
           hinted: false,
@@ -208,7 +208,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Self Assessment to Peer Assessment',
+          display_name: 'Autoevaluación a evaluación entre compañeros',
           category: 'openassessment',
           boilerplate_name: 'self-to-peer',
           hinted: false,
@@ -216,7 +216,7 @@ module.exports = {
           support_level: true,
         },
         {
-          display_name: 'Self Assessment to Staff Assessment',
+          display_name: 'Autoevaluación a Evaluación del Personal',
           category: 'openassessment',
           boilerplate_name: 'self-to-staff',
           hinted: false,
@@ -235,7 +235,7 @@ module.exports = {
       type: 'problem',
       templates: [
         {
-          display_name: 'Blank Common Problem',
+          display_name: 'Problema común en blanco',
           category: 'problem',
           boilerplate_name: 'blank_common.yaml',
           hinted: false,
@@ -273,7 +273,7 @@ module.exports = {
       type: 'drag-and-drop-v2',
       templates: [
         {
-          display_name: 'Drag and Drop',
+          display_name: 'Arrastrar y soltar',
           category: 'drag-and-drop-v2',
           boilerplate_name: null,
           hinted: false,
@@ -281,7 +281,7 @@ module.exports = {
           support_level: true,
         },
       ],
-      display_name: 'Drag and Drop',
+      display_name: 'Arrastrar y soltar',
       support_legend: {
         show_legend: false,
         allow_unsupported_xblocks: false,
