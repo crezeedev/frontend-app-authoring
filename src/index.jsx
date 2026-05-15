@@ -35,13 +35,6 @@ import { ToastProvider } from './generic/toast-context';
 import 'react-datepicker/dist/react-datepicker.css';
 import './index.scss';
 
-import messagesEs419 from './es_419.json';
-
-const messagesTraduc = {
-  // 'en': require('./en.json'),
-  'es_419': messagesEs419, 
-};
-
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -51,9 +44,6 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-  useEffect(() => {
-    console.log('LANGUAGE_PREFERENCE (after mount):', getConfig().LANGUAGE_PREFERENCE);
-  }, []);
   useEffect(() => {
     if (process.env.HOTJAR_APP_ID) {
       try {
@@ -160,9 +150,6 @@ initialize({
       }, 'CourseAuthoringConfig');
     },
   },
-  messages: {
-    es_419: messagesEs419,
-  },
-  locale: 'es_419',
+  messages,
   requireAuthenticatedUser: true,
 });
