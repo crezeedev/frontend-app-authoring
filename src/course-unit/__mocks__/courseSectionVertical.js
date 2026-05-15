@@ -57,7 +57,7 @@ module.exports = {
   ],
   component_templates: [
     {
-      type: 'avanzado',
+      type: 'advanced',
       templates: [
         {
           display_name: 'Anotación',
@@ -84,7 +84,7 @@ module.exports = {
       },
     },
     {
-      type: 'discusión',
+      type: 'discussion',
       templates: [
         {
           display_name: 'Discusión',
@@ -103,7 +103,7 @@ module.exports = {
       },
     },
     {
-      type: 'biblioteca',
+      type: 'library',
       templates: [
         {
           display_name: 'Randomized Content Block',
@@ -181,7 +181,7 @@ module.exports = {
       },
     },
     {
-      type: 'evaluación abierta',
+      type: 'openassessment',
       templates: [
         {
           display_name: 'Solo evaluación entre compañeros',
