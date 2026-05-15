@@ -1,5 +1,5 @@
 // @ts-check
-import { defineMessages } from '@edx/frontend-platform/i18n';
+import { defineMessages } from './es_419.json';
 
 const messages = defineMessages({
   headerTitle: {

@@ -113,33 +113,37 @@ const CoursesTab: React.FC<Props> = ({
   const hasCourses = coursesDataItems?.length > 0;
 
   useEffect(() => {
-  const pagination = document.querySelector('.pagination');
+  const timer = setTimeout(() => {
+    const pagination = document.querySelector('.pagination');
 
-  if (!pagination) return;
+    if (!pagination) return;
 
-  pagination.querySelectorAll('button').forEach((button) => {
-    const text = button.textContent?.trim();
+    pagination.querySelectorAll('button').forEach((button) => {
+      const text = button.textContent?.trim();
 
-    if (text?.includes('Previous')) {
-      button.childNodes.forEach((node) => {
-        if (node.nodeType === Node.TEXT_NODE) {
-          node.textContent = 'Anterior';
-        }
-      });
+      if (text?.includes('Previous')) {
+        button.childNodes.forEach((node) => {
+          if (node.nodeType === Node.TEXT_NODE) {
+            node.textContent = 'Anterior';
+          }
+        });
 
-      button.setAttribute('aria-label', 'Anterior');
-    }
+        button.setAttribute('aria-label', 'Anterior');
+      }
 
-    if (text?.includes('Next')) {
-      button.childNodes.forEach((node) => {
-        if (node.nodeType === Node.TEXT_NODE) {
-          node.textContent = 'Siguiente';
-        }
-      });
+      if (text?.includes('Next')) {
+        button.childNodes.forEach((node) => {
+          if (node.nodeType === Node.TEXT_NODE) {
+            node.textContent = 'Siguiente';
+          }
+        });
 
-      button.setAttribute('aria-label', 'Siguiente');
-    }
-  });
+        button.setAttribute('aria-label', 'Siguiente');
+      }
+    });
+  }, 0);
+
+  return () => clearTimeout(timer);
 }, [currentPage, numPages, coursesDataItems]);
 
   if (isLoading && !isFiltered) {
