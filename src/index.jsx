@@ -37,7 +37,7 @@ import './index.scss';
 
 import messagesEs419 from './es_419.json';
 
-const messages = {
+const messagesTraduc = {
   // 'en': require('./en.json'),
   'es_419': messagesEs419, 
 };
@@ -157,8 +157,7 @@ initialize({
       }, 'CourseAuthoringConfig');
     },
   },
-  //messages,
-  requireAuthenticatedUser: true,
-  messages: messages,
+  messages: messagesEs419,
   locale: 'es-419', 
+  requireAuthenticatedUser: true,
 });
