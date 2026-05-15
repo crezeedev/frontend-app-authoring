@@ -1,37 +1,37 @@
-import { defineMessages } from './es_419.json';
+import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
   newSectionButton: {
     id: 'course-authoring.course-outline.header-navigations.button.new-section',
-    defaultMessage: 'New section',
+    defaultMessage: 'Nueva sección',
   },
   newSectionButtonTooltip: {
     id: 'course-authoring.course-outline.header-navigations.button.new-section.tooltip',
-    defaultMessage: 'Click to add a new section',
+    defaultMessage: 'Haz clic para agregar una nueva sección',
   },
   reindexButton: {
     id: 'course-authoring.course-outline.header-navigations.button.reindex',
-    defaultMessage: 'Reindex',
+    defaultMessage: 'Reindexar',
   },
   reindexButtonTooltip: {
     id: 'course-authoring.course-outline.header-navigations.button.reindex.tooltip',
-    defaultMessage: 'Reindex current course',
+    defaultMessage: 'Reindexar el curso actual',
   },
   expandAllButton: {
     id: 'course-authoring.course-outline.header-navigations.button.expand-all',
-    defaultMessage: 'Expand all',
+    defaultMessage: 'Expandir todo',
   },
   collapseAllButton: {
     id: 'course-authoring.course-outline.header-navigations.button.collapse-all',
-    defaultMessage: 'Collapse all',
+    defaultMessage: 'Contraer todo',
   },
   viewLiveButton: {
     id: 'course-authoring.course-outline.header-navigations.button.view-live',
-    defaultMessage: 'View live',
+    defaultMessage: 'Ver en vivo',
   },
   viewLiveButtonTooltip: {
     id: 'course-authoring.course-outline.header-navigations.button.view-live.tooltip',
-    defaultMessage: 'Click to open the courseware in the LMS in a new tab',
+    defaultMessage: 'Haz clic para abrir el contenido del curso en el LMS en una nueva pestaña',
   },
 });
 

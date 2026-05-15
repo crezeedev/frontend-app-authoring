@@ -51,6 +51,8 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
+    console.log('messagesEs419:', messagesEs419);
+  console.log('config locale:', getConfig().LANGUAGE_PREFERENCE);
   useEffect(() => {
     if (process.env.HOTJAR_APP_ID) {
       try {
@@ -157,7 +159,9 @@ initialize({
       }, 'CourseAuthoringConfig');
     },
   },
-  messages: messagesEs419,
-  locale: 'es_419', 
+  messages: {
+    'es_419': messagesEs419,
+  },
+  locale: 'es_419',
   requireAuthenticatedUser: true,
 });
