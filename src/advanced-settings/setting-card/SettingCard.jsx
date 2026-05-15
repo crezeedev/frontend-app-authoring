@@ -63,7 +63,10 @@ const SettingCard = ({
             className="col-6"
             title={(
               <ActionRow>
-                {capitalize(displayName)}
+                {intl.formatMessage({
+                  id: `setting.${name}.displayName`,
+                  defaultMessage: displayName,
+                })}
                 <IconButton
                   ref={setTarget}
                   onClick={open}
@@ -81,11 +84,12 @@ const SettingCard = ({
                   onClose={close}
                   className="pgn__modal-popup__arrow"
                 >
-                  <div
-                    className="p-2 x-small rounded modal-popup-content"
-                    // eslint-disable-next-line react/no-danger
-                    dangerouslySetInnerHTML={{ __html: help }}
-                  />
+                  <div className="p-2 x-small rounded modal-popup-content">
+                  {intl.formatMessage({
+                    id: `setting.${name}.help`,
+                    defaultMessage: help,
+                  })}
+                </div>
                 </ModalPopup>
                 <ActionRow.Spacer />
               </ActionRow>
