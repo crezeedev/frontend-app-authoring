@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useIntl } from '@edx/frontend-platform/i18n';
@@ -24,6 +24,7 @@ import { LoadingSpinner } from '../../../generic/Loading';
 import AlertMessage from '../../../generic/alert-message';
 import messages from '../messages';
 import './index.scss';
+
 
 interface Props {
   coursesDataItems: {
@@ -111,6 +112,36 @@ const CoursesTab: React.FC<Props> = ({
   const isNotFilteringCourses = !isFiltered && !isLoading;
   const hasCourses = coursesDataItems?.length > 0;
 
+  useEffect(() => {
+  const pagination = document.querySelector('.pagination');
+
+  if (!pagination) return;
+
+  pagination.querySelectorAll('button').forEach((button) => {
+    const text = button.textContent?.trim();
+
+    if (text?.includes('Previous')) {
+      button.childNodes.forEach((node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          node.textContent = 'Anterior';
+        }
+      });
+
+      button.setAttribute('aria-label', 'Anterior');
+    }
+
+    if (text?.includes('Next')) {
+      button.childNodes.forEach((node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          node.textContent = 'Siguiente';
+        }
+      });
+
+      button.setAttribute('aria-label', 'Siguiente');
+    }
+  });
+}, [currentPage, numPages, coursesDataItems]);
+
   if (isLoading && !isFiltered) {
     return (
       <Row className="m-0 mt-4 justify-content-center">
@@ -179,8 +210,6 @@ const CoursesTab: React.FC<Props> = ({
                 pageCount={numPages}
                 currentPage={currentPage}
                 onPageSelect={handlePageSelected}
-                previousText = "Anterior"
-                nextText = "Siguiente"
               />
             )}
           </>
