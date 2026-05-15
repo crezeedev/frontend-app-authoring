@@ -55,6 +55,102 @@ const SettingCard = ({
     handleBlur();
   };
 
+const settingsTranslations = {
+  'Allow Anonymous Discussion Posts': 'Permitir publicaciones anónimas',
+  'Allow Anonymous Discussion Posts to Peers': 'Permitir publicaciones anónimas a compañeros',
+  'Allow Opting Out of Proctored Exams': 'Permitir desactivar exámenes supervisados',
+  'Allow Public Wiki Access': 'Permitir acceso público al wiki',
+
+  'Certificate Name (Long)': 'Nombre del certificado (largo)',
+  'Certificate Name (Short)': 'Nombre del certificado (corto)',
+  'Certificate Web/HTML View Overrides': 'Sobrescrituras de vista HTML del certificado',
+
+  'Cosmetic Course Display Price': 'Precio de visualización del curso',
+
+  'Course About Page Image': 'Imagen de la página “Acerca del curso”',
+  'Course Advertised Start': 'Fecha de inicio anunciada del curso',
+  'Course Announcement Date': 'Fecha de anuncio del curso',
+  'Course Banner Image': 'Imagen del banner del curso',
+  'Course Display Name': 'Nombre del curso',
+  'Course Instructor': 'Instructor del curso',
+  'Course Is New': 'Curso nuevo',
+  'Course Learning Information': 'Información de aprendizaje del curso',
+  'Course Maximum Student Enrollment': 'Máximo de estudiantes inscritos',
+  'Course Not Graded': 'Curso no calificado',
+  'Course Number Display String': 'Número del curso',
+  'Course Organization Display String': 'Organización del curso',
+  'Course Video Thumbnail Image': 'Miniatura de video del curso',
+  'Course Visibility In Catalog': 'Visibilidad del curso en catálogo',
+
+  'Course-wide Custom CSS': 'CSS personalizado del curso',
+  'Course-wide Custom JS': 'JavaScript personalizado del curso',
+
+  'Create Zendesk Tickets For Suspicious Proctored Exam Attempts':
+    'Crear tickets en Zendesk por intentos sospechosos en exámenes supervisados',
+
+  'Days Early for Beta Users': 'Días de acceso temprano para usuarios beta',
+  'Disable Progress Graph': 'Desactivar gráfico de progreso',
+
+  'Discussion Blackout Dates': 'Fechas de bloqueo de discusión',
+  'Discussion Topic Mapping': 'Mapeo de temas de discusión',
+
+  'Due Date Display Format': 'Formato de fecha de entrega',
+
+  'Enable LaTeX Compiler': 'Habilitar compilador LaTeX',
+  'Enable Proctored Exams': 'Habilitar exámenes supervisados',
+  'Enable Student Notes': 'Habilitar notas del estudiante',
+  'Enable Subsection Prerequisites': 'Habilitar prerrequisitos de subsecciones',
+  'Enable Timed Exams': 'Habilitar exámenes cronometrados',
+  'Enable video caching system': 'Habilitar caché de video',
+
+  'External Login Domain': 'Dominio de login externo',
+
+  'Fecha límite de entrega': 'Fecha límite de entrega',
+
+  'Force Flexible Grading for Peer ORAs':
+    'Forzar calificación flexible en ORA de pares',
+
+  'HTML Textbooks': 'Libros HTML',
+
+  'Invitation Only': 'Solo por invitación',
+
+  'LTI Passports': 'Credenciales LTI',
+
+  'Matlab API key': 'Clave API de Matlab',
+
+  'Maximum Attempts': 'Número máximo de intentos',
+
+  'Mobile Course Available': 'Curso disponible en móvil',
+
+  'Number of Relative Weeks Due By':
+    'Número de semanas relativas para entrega',
+
+  'Proctoring Provider': 'Proveedor de supervisión',
+
+  'Randomization': 'Aleatorización',
+
+  'Remote Gradebook': 'Libro de calificaciones remoto',
+
+  'Show Answer': 'Mostrar respuesta',
+  'Show Calculator': 'Mostrar calculadora',
+  'Show Reset Button for Problems': 'Mostrar botón de reinicio',
+
+  'Static Asset Path': 'Ruta de assets estáticos',
+
+  'Teams Configuration': 'Configuración de equipos',
+
+  'Video Sharing Options': 'Opciones de compartición de video',
+
+  'upstream': 'Upstream',
+  'upstream_display_name': 'Nombre upstream',
+  'upstream_max_attempts': 'Máximo de intentos upstream',
+  'upstream_version': 'Versión upstream',
+  'upstream_version_declined': 'Versión upstream rechazada'
+};
+
+const translatedDisplayName =
+  settingsTranslations[displayName] || displayName;
+  
   return (
     <li className="field-group course-advanced-policy-list-item">
       <Card className="flex-column setting-card">
@@ -63,10 +159,7 @@ const SettingCard = ({
             className="col-6"
             title={(
               <ActionRow>
-                {intl.formatMessage({
-                  id: `setting.${name}.displayName`,
-                  defaultMessage: displayName,
-                })}
+                {settingsTranslations[displayName] || displayName}
                 <IconButton
                   ref={setTarget}
                   onClick={open}
