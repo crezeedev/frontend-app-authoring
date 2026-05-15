@@ -78,7 +78,7 @@ const messages = defineMessages({
   },
   'blockType.drag-and-drop-v2': {
     id: 'course-authoring.course-search.blockType.drag-and-drop-v2',
-    defaultMessage: 'Drag and Drop',
+    defaultMessage: 'Arrastrar y soltar',
     description: 'Name of the "Drag and Drop" component type in Studio',
   },
   'blockType.html': {
