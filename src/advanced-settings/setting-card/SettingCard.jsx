@@ -56,6 +56,7 @@ const SettingCard = ({
   };
 
 const settingsTranslations = {
+  'Advanced Module List': 'Lista de módulos avanzados',
   'Allow Anonymous Discussion Posts': 'Permitir publicaciones anónimas',
   'Allow Anonymous Discussion Posts to Peers': 'Permitir publicaciones anónimas a compañeros',
   'Allow Opting Out of Proctored Exams': 'Permitir desactivar exámenes supervisados',
