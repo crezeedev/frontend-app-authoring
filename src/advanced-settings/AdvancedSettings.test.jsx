@@ -82,6 +82,7 @@ describe('<AdvancedSettings />', () => {
   it('should change to onСhange', async () => {
     const { getByLabelText } = render(<RootWrapper />);
     await waitFor(() => {
+      // const textarea = getByLabelText(/Advanced Module List/i);
       const textarea = getByLabelText(/Advanced Module List/i);
       expect(textarea).toBeInTheDocument();
       fireEvent.change(textarea, { target: { value: '[1, 2, 3]' } });

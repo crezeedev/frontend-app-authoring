@@ -179,6 +179,8 @@ const CoursesTab: React.FC<Props> = ({
                 pageCount={numPages}
                 currentPage={currentPage}
                 onPageSelect={handlePageSelected}
+                previousText = "Anterior"
+                nextText = "Siguiente"
               />
             )}
           </>

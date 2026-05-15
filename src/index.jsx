@@ -35,6 +35,13 @@ import { ToastProvider } from './generic/toast-context';
 import 'react-datepicker/dist/react-datepicker.css';
 import './index.scss';
 
+import messagesEs419 from './es_419.json';
+
+const messages = {
+  // 'en': require('./en.json'),
+  'es_419': messagesEs419, 
+};
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -150,6 +157,8 @@ initialize({
       }, 'CourseAuthoringConfig');
     },
   },
-  messages,
+  //messages,
   requireAuthenticatedUser: true,
+  messages: messages,
+  locale: 'es-419', 
 });
