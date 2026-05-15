@@ -1,69 +1,69 @@
 // @ts-check
-import { defineMessages } from './es_419.json';
+import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
   headerTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.header.title',
-    defaultMessage: 'Assign to organizations',
+    defaultMessage: 'Asignar a organizaciones',
   },
   bodyText: {
     id: 'course-authoring.taxonomy-manage-orgs.body.text',
-    defaultMessage: 'Manage which organizations can access the taxonomy by assigning them in the menu below. You can '
-    + 'also choose to assign the taxonomy to all organizations.',
+    defaultMessage: 'Administra qué organizaciones pueden acceder a la taxonomía asignándolas en el menú de abajo. También puedes '
+    + 'elegir asignar la taxonomía a todas las organizaciones.',
   },
   assignOrgs: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-orgs',
-    defaultMessage: 'Assign organizations',
+    defaultMessage: 'Asignar organizaciones',
   },
   currentAssignments: {
     id: 'course-authoring.taxonomy-manage-orgs.current-assignments',
-    defaultMessage: 'Currently assigned:',
+    defaultMessage: 'Asignadas actualmente:',
   },
   addOrganizations: {
     id: 'course-authoring.taxonomy-manage-orgs.add-orgs',
-    defaultMessage: 'Add another organization:',
+    defaultMessage: 'Agregar otra organización:',
   },
   searchOrganizations: {
     id: 'course-authoring.taxonomy-manage-orgs.search-orgs',
-    defaultMessage: 'Search for an organization',
+    defaultMessage: 'Buscar una organización',
   },
   noOrganizationAssigned: {
     id: 'course-authoring.taxonomy-manage-orgs.no-orgs',
-    defaultMessage: 'No organizations assigned',
+    defaultMessage: 'No hay organizaciones asignadas',
   },
   assignAll: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-all',
-    defaultMessage: 'Assign to all organizations',
+    defaultMessage: 'Asignar a todas las organizaciones',
   },
   cancelButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Cancelar',
   },
   saveButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.save',
-    defaultMessage: 'Save',
+    defaultMessage: 'Guardar',
   },
   confirmUnassignTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.title',
-    defaultMessage: 'Unassign taxonomy',
+    defaultMessage: 'Desasignar taxonomía',
   },
   confirmUnassignText: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.text',
-    defaultMessage: 'Content authors from unassigned organizations will not be able to tag course content with '
-    + '{taxonomyName}. Are you sure you want to continue?',
+    defaultMessage: 'Los autores de contenido de las organizaciones desasignadas no podrán etiquetar contenido del curso con '
+    + '{taxonomyName}. ¿Estás seguro de que deseas continuar?',
   },
   continueButton: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.button.continue',
-    defaultMessage: 'Continue',
+    defaultMessage: 'Continuar',
   },
   assignOrgsSuccess: {
     id: 'course-authoring.taxonomy-manage-orgs.toast.assign-orgs-success',
-    defaultMessage: 'Assigned organizations updated',
+    defaultMessage: 'Organizaciones asignadas actualizadas',
   },
   removeOrg: {
     id: 'course-authoring.taxonomy-manage-orgs.remove-org',
-    defaultMessage: 'Remove {org}',
-    description: 'button to remove a specific organization from a taxonomy',
+    defaultMessage: 'Eliminar {org}',
+    description: 'botón para eliminar una organización específica de una taxonomía',
   },
 });
 
