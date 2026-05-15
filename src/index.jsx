@@ -158,6 +158,6 @@ initialize({
     },
   },
   messages: messagesEs419,
-  locale: 'es-419', 
+  locale: 'es_419', 
   requireAuthenticatedUser: true,
 });

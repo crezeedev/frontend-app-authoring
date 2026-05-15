@@ -3,15 +3,15 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   systemTaxonomyPopoverTitle: {
     id: 'course-authoring.taxonomy-list.popover.system-defined.title',
-    defaultMessage: 'System taxonomy',
+    defaultMessage: 'Taxonomía del sistema',
   },
   systemTaxonomyPopoverBody: {
     id: 'course-authoring.taxonomy-list.popover.system-defined.body',
-    defaultMessage: 'This is a system-level taxonomy and is enabled by default.',
+    defaultMessage: 'Se trata de una taxonomía a nivel de sistema y está habilitada por defecto.',
   },
   systemDefinedBadge: {
     id: 'course-authoring.taxonomy-list.badge.system-defined.label',
-    defaultMessage: 'System-level',
+    defaultMessage: 'Nivel de sistema',
   },
 });
 

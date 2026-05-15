@@ -8,11 +8,11 @@ const messages = defineMessages({
   aboutDescription: {
     id: "course-authoring.studio-home.sidebar.about.description",
     defaultMessage:
-      'Click "Looking for help with Studio" at the bottom of the page to access our continually updated documentation and other {studioShortName} resources.',
-  },
+    'Haz clic en "Buscar ayuda con Studio" en la parte inferior de la página para acceder a nuestra documentación actualizada continuamente y otros recursos de {studioShortName}.' 
+ },
   studioHomeLinkToGettingStarted: {
     id: "course-authoring.studio-home.sidebar.about.getting-started",
-    defaultMessage: "Getting started with {studioName}",
+    defaultMessage: "Comenzando con {studioName}",
   },
   sidebarHeader2: {
     id: "course-authoring.studio-home.sidebar.about.header-2",
