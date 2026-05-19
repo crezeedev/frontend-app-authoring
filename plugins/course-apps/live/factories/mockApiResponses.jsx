@@ -19,8 +19,8 @@ export const initialState = {
       live: {
         id: 'live',
         enabled: true,
-        name: 'Vivir',
-        description: 'Habilite las videoconferencias en la plataforma configurando la transmisión en vivo.',
+        name: 'Live',
+        description: 'Enable in-platform video conferencing by configuring live',
         allowedOperations: {
           enable: true,
           configure: true,
