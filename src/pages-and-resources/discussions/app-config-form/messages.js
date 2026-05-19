@@ -4,39 +4,39 @@ const messages = defineMessages({
   configurationChangeConsequence: {
     id: "authoring.discussions.configurationChangeConsequences",
     defaultMessage:
-      "Students will lose access to any active or previous" +
-      " discussion posts for your course.",
+      "Los estudiantes perderán el acceso a cualquier cuenta activa o anterior" +
+      " publicaciones de debate para tu curso.",
     description:
       "Describes that, as a consequence of changing configuration," +
       " students will lose access posts on the course.",
   },
   configureApp: {
     id: "authoring.discussions.configure.app",
-    defaultMessage: "Configure {name}",
+    defaultMessage: "Configurar {name}",
   },
   configure: {
     id: "authoring.discussions.configure",
-    defaultMessage: "Configure discussions",
+    defaultMessage: "Configurar discusiones",
   },
   ok: {
     id: "authoring.discussions.ok",
-    defaultMessage: "OK",
+    defaultMessage: "De acuerdp",
     description: "Button allowing the user to acknowledge the provider change.",
   },
   cancel: {
     id: "authoring.discussions.cancel",
-    defaultMessage: "Cancel",
+    defaultMessage: "Cancelar",
     description:
       "Button allowing the user to return to discussion provider configurations.",
   },
   confirm: {
     id: "authoring.discussions.confirm",
-    defaultMessage: "Confirm",
+    defaultMessage: "Confirmar",
     description: "Button allowing the user to confirm Confirmation.",
   },
   confirmConfigurationChange: {
     id: "authoring.discussions.confirmConfigurationChange",
-    defaultMessage: "Are you sure you want to change the discussion settings?",
+    defaultMessage: "¿Estás seguro de que quieres cambiar la configuración de la discusión?",
     description:
       "Asks the user whether he/she really wants to change settings.",
   },
@@ -48,7 +48,7 @@ const messages = defineMessages({
   },
   cancelEnableDiscussionsLabel: {
     id: "authoring.discussions.cancelEnableDiscussionsLabel",
-    defaultMessage: "Disable discussions on units in graded subsections?",
+    defaultMessage: "¿Deshabilitar las discusiones sobre las unidades en las subsecciones calificadas?",
     description:
       "Asks the user whether he/she really wants to disable discussions on units in graded subsections.",
   },
@@ -62,7 +62,7 @@ const messages = defineMessages({
   cancelEnableDiscussions: {
     id: "authoring.discussions.cancelEnableDiscussions",
     defaultMessage:
-      "Disabling this toggle will automatically disable discussion on all units in graded subsections. Discussion topics containing at least 1 thread will be listed and accessible under “Archived” in Topics tab on the Discussions page.",
+      "Al desactivar esta opción, se deshabilitarán automáticamente los debates en todas las unidades de las subsecciones calificadas. Los temas de debate que contengan al menos un hilo aparecerán en la sección “Archivados” de la pestaña temas en la página de debates, y podrán consultarse en ella.",
     description:
       "Asks the user whether he/she really wants to disable discussions on units in graded subsections.",
   },
@@ -80,13 +80,13 @@ const messages = defineMessages({
   },
   savingButton: {
     id: "authoring.discussions.savingButton",
-    defaultMessage: "Saving",
+    defaultMessage: "Guardando",
     description:
       "Button label when the discussion configuration is being submitted.",
   },
   savedButton: {
     id: "authoring.discussions.savedButton",
-    defaultMessage: "Saved",
+    defaultMessage: "Guardado",
     description:
       "Button label when the discussion configuration has been successfully submitted.",
   },
@@ -146,14 +146,14 @@ const messages = defineMessages({
   },
   divideCourseTopicsByCohortsLabel: {
     id: "authoring.discussions.builtIn.divideCourseTopicsByCohorts.label",
-    defaultMessage: "Divide course-wide discussion topics",
+    defaultMessage: "Dividir los temas de debate del curso",
     description:
       "Label for a switch that enables dividing course wide topics by cohorts.",
   },
   divideCourseTopicsByCohortsHelp: {
     id: "authoring.discussions.builtIn.divideCourseTopicsByCohorts.help",
     defaultMessage:
-      "Choose which of your general course-wide discussion topics you would like to divide.",
+      "Elija cuáles de los temas generales de debate del curso le gustaría dividir.",
     description:
       "Help text asking the user to pick course-wide topics that should be divided by cohort.",
   },
@@ -165,7 +165,7 @@ const messages = defineMessages({
   },
   divideQuestionsForTAsTopic: {
     id: "authoring.discussions.builtIn.divideQuestionsForTAsTopic.label",
-    defaultMessage: "Questions for the TAs",
+    defaultMessage: "Preguntas para los ayudantes de TAs",
     description:
       'Label for a checkbox allowing a user to divide the Questions for the TAs (TA stands for "teaching assistant") course wide topic by cohorts.',
   },
@@ -176,7 +176,7 @@ const messages = defineMessages({
   },
   instructorDashboard: {
     id: "authoring.discussions.builtIn.instructorDashboard.label",
-    defaultMessage: "panel del instructor",
+    defaultMessage: "Panel del instructor",
     description: "Label text for instructor dashboard",
   },
   // In-context discussion fields
@@ -215,7 +215,7 @@ const messages = defineMessages({
   allowAnonymousPostsHelp: {
     id: "authoring.discussions.builtIn.allowAnonymous.help",
     defaultMessage:
-      "If enabled, learners can create posts that are anonymous to all users.",
+      "Si está habilitada, los estudiantes pueden crear publicaciones que serán anónimas para todos los usuarios.",
   },
   allowAnonymousPostsPeersLabel: {
     id: "authoring.discussions.builtIn.allowAnonymousPeers.label",
@@ -263,13 +263,13 @@ const messages = defineMessages({
   },
   discussionTopicRequired: {
     id: "authoring.discussions.discussionTopic.required",
-    defaultMessage: "Topic name is a required field",
+    defaultMessage: "El nombre del tema es un campo obligatorio.",
     description:
       "Tells the user that the discussion topic field is required and must have a value.",
   },
   discussionTopicNameAlreadyExist: {
     id: "authoring.discussions.discussionTopic.alreadyExistError",
-    defaultMessage: "It looks like this name is already in use",
+    defaultMessage: "Parece que este nombre ya está en uso.",
     description:
       "Tells the user that the discussion topic name already in use and must have a unique name.",
   },
@@ -293,13 +293,13 @@ const messages = defineMessages({
   discussionTopicDeletionHelp: {
     id: "authoring.discussions.discussionTopicDeletion.help",
     defaultMessage:
-      "edX recommends that you do not delete discussion topics once your course is running.",
+      "edX recomienda que no elimines los temas de debate una vez que tu curso esté en marcha.",
     description:
       "Help text for delete a discussion topic from discussion topic section.",
   },
   discussionTopicDeletionLabel: {
     id: "authoring.discussions.discussionTopicDeletion.label",
-    defaultMessage: "Delete this topic?",
+    defaultMessage: "¿Eliminar este tema?",
     description:
       "Label for discussion topic delete popup allowing a user to delete a topic.",
   },
@@ -328,19 +328,19 @@ const messages = defineMessages({
   // Restricted dates
   restrictedStartDateHelp: {
     id: "authoring.discussions.restrictedStartDate.help",
-    defaultMessage: "Enter a start date, e.g. 12/10/2023",
+    defaultMessage: "Introduzca una fecha de inicio, e.g. 12/10/2023",
   },
   restrictedEndDateHelp: {
     id: "authoring.discussions.restrictedEndDate.help",
-    defaultMessage: "Enter an end date, e.g. 12/17/2023",
+    defaultMessage: "Introduzca una fecha de finalización, e.g. 12/17/2023",
   },
   restrictedStartTimeHelp: {
     id: "authoring.discussions.restrictedStartTime.help",
-    defaultMessage: "Enter a start time, e.g. 09:00 AM",
+    defaultMessage: "Introduzca una hora de inicio, e.g. 09:00 AM",
   },
   restrictedEndTimeHelp: {
     id: "authoring.discussions.restrictedEndTime.help",
-    defaultMessage: "Enter an end time, e.g. 05:00 PM",
+    defaultMessage: "Introduzca una hora de finalización, e.g. 05:00 PM",
   },
   restrictedDatesStatus: {
     id: "authoring.restrictedDates.status",
@@ -360,49 +360,49 @@ const messages = defineMessages({
   },
   restrictedStartDateInPast: {
     id: "authoring.restrictedDates.startDate.inPast",
-    defaultMessage: "Start date cannot be after end date",
+    defaultMessage: "La fecha de inicio no puede ser posterior a la fecha de finalización.",
     description:
       "Tells the user that the restricted start date cannot be in past and cannot be after end date",
   },
   restrictedEndDateInPast: {
     id: "authoring.restrictedDates.endDate.inPast",
-    defaultMessage: "End date cannot be before start date",
+    defaultMessage: "La fecha de finalización no puede ser anterior a la fecha de inicio.",
     description:
       "Tells the user that the restricted end date cannot be in past and cannot be before start date",
   },
   restrictedStartTimeInPast: {
     id: "authoring.restrictedDates.startTime.inPast",
-    defaultMessage: "Start time cannot be after end time",
+    defaultMessage: "La hora de inicio no puede ser posterior a la hora de finalización.",
     description:
       "Tells the user that the restricted start time cannot be in past and cannot be after end time",
   },
   restrictedEndTimeInPast: {
     id: "authoring.restrictedDates.endTime.inPast",
-    defaultMessage: "End time cannot be before start time",
+    defaultMessage: "La hora de finalización no puede ser anterior a la hora de inicio.",
     description:
       "Tells the user that the restricted end time cannot be in past and cannot be before start time",
   },
   restrictedStartTimeInValidFormat: {
     id: "authoring.restrictedDates.startTime.inValidFormat",
-    defaultMessage: "Enter a valid start time",
+    defaultMessage: "Introduzca una hora de inicio válida.",
     description:
       "Tells the user that the restricted start time format is in valid",
   },
   restrictedEndTimeInValidFormat: {
     id: "authoring.restrictedDates.endTime.inValidFormat",
-    defaultMessage: "Enter a valid end time",
+    defaultMessage: "Introduzca una hora de finalización válida.",
     description:
       "Tells the user that the restricted end time format is in valid",
   },
   restrictedStartDateInValidFormat: {
     id: "authoring.restrictedDates.startDate.inValidFormat",
-    defaultMessage: "Enter a valid start Date",
+    defaultMessage: "Introduzca una fecha de inicio válida.",
     description:
       "Tells the user that the restricted start date format is in valid",
   },
   restrictedEndDateInValidFormat: {
     id: "authoring.restrictedDates.endDate.inValidFormat",
-    defaultMessage: "Enter a valid end date",
+    defaultMessage: "Introduzca una fecha de finalización válida.",
     description:
       "Tells the user that the restricted end date format is in valid",
   },
@@ -437,19 +437,19 @@ const messages = defineMessages({
   activeRestrictedDatesDeletionHelp: {
     id: "authoring.discussions.activeRestrictedDatesDeletion.help",
     defaultMessage:
-      "These restricted dates are currently active. If deleted, learners will be able to post in discussions during these dates. Are you sure you want to proceed?",
+      "Estas fechas restringidas están activas. Si se eliminan, los estudiantes podrán participar en los foros de discusión durante esas fechas. ¿Está seguro de que desea continuar?",
     description:
       "Help text for delete a active restricted dates from restricted dates section.",
   },
   completeRestrictedDatesDeletionHelp: {
     id: "authoring.discussions.completeRestrictedDatesDeletion.help",
-    defaultMessage: "Are you sure you want to delete these restricted dates?",
+    defaultMessage: "¿Está seguro de que desea eliminar estas fechas restringidas?",
     description:
       "Help text for delete a complete restricted dates from restricted dates section.",
   },
   restrictedDatesDeletionLabel: {
     id: "authoring.discussions.restrictedDatesDeletion.label",
-    defaultMessage: "Delete restricted dates?",
+    defaultMessage: "¿Eliminar fechas restringidas?",
     description:
       "Label for restricted dates delete popup allowing a user to delete a restricted date range.",
   },
@@ -462,17 +462,17 @@ const messages = defineMessages({
   },
   discussionRestrictionOffLabelHelpText: {
     id: "authoring.discussions.discussionRestrictionOff.label",
-    defaultMessage: "If enabled, learners will be able to post in discussions",
+    defaultMessage: "Si está habilitada, los estudiantes podrán publicar en los foros de discusión.",
   },
   discussionRestrictionOnLabelHelpText: {
     id: "authoring.discussions.discussionRestrictionOn.label",
     defaultMessage:
-      "If enabled, learners will not be able to post in discussions",
+      "Si está habilitada, los estudiantes no podrán publicar en los foros de discusión.",
   },
   discussionRestrictionScheduledLabelHelpText: {
     id: "authoring.discussions.discussionRestrictionScheduled.label",
     defaultMessage:
-      "If added, learners will not be able to post in discussions between these dates.",
+      "Si se añaden estas fechas, los alumnos no podrán participar en los foros de discusión.",
   },
   enableRestrictedDatesConfirmationLabel: {
     id: "authoring.discussions.enableRestrictedDatesConfirmation.label",
@@ -484,15 +484,15 @@ const messages = defineMessages({
   },
   deleteAltText: {
     id: "authoring.topics.delete",
-    defaultMessage: "Delete Topic",
+    defaultMessage: "Eliminar tema",
   },
   expandAltText: {
     id: "authoring.topics.expand",
-    defaultMessage: "Expand",
+    defaultMessage: "Expandir",
   },
   collapseAltText: {
     id: "authoring.topics.collapse",
-    defaultMessage: "Collapse",
+    defaultMessage: "Colapsar",
   },
   startDateLabel: {
     id: "authoring.restrictedDates.start.date",

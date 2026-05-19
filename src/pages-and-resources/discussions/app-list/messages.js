@@ -7,21 +7,21 @@ const messages = defineMessages({
   },
   supportedFeatures: {
     id: 'authoring.discussions.supportedFeatures',
-    defaultMessage: 'Supported features',
+    defaultMessage: 'Características compatibles',
   },
   'supportedFeatureList-mobile-show': {
     id: 'authoring.discussions.supportedFeatureList-mobile-show',
-    defaultMessage: 'Show supported features',
+    defaultMessage: 'Mostrar características compatibles',
     description: 'This is used in mobile view as supported feature list heading when close',
   },
   'supportedFeatureList-mobile-hide': {
     id: 'authoring.discussions.supportedFeatureList-mobile-hide',
-    defaultMessage: 'Hide supported features',
+    defaultMessage: 'Ocultar las funciones compatibles',
     description: 'This is used in mobile view as supported feature list heading when opened',
   },
   noApps: {
     id: 'authoring.discussions.noApps',
-    defaultMessage: 'There are no discussions providers available for your course.',
+    defaultMessage: 'No hay proveedores de foros de discusión disponibles para su curso.',
     description: 'A message shown when there are no discussions providers available to be displayed.',
   },
   nextButton: {
@@ -31,7 +31,7 @@ const messages = defineMessages({
   },
   appFullSupport: {
     id: 'authoring.discussions.appFullSupport',
-    defaultMessage: 'Full support',
+    defaultMessage: 'Soporte completo',
     description: 'A label indicating that an app supports the full set of possible features for a discussions app.',
   },
   appBasicSupport: {
@@ -53,7 +53,7 @@ const messages = defineMessages({
   },
   'appDescription-legacy': {
     id: 'authoring.discussions.appList.appDescription-legacy',
-    defaultMessage: 'Start conversations with other learners, ask questions, and interact with other learners in the course.',
+    defaultMessage: 'Inicia conversaciones con otros estudiantes, haz preguntas e interactúa con ellos en el curso.',
     description: 'A description of the Legacy edX Discussions app.',
   },
   // New provider
@@ -64,54 +64,54 @@ const messages = defineMessages({
   },
   'appDescription-openedx': {
     id: 'authoring.discussions.appList.appDescription-openedx',
-    defaultMessage: 'Enable participation in discussion topics alongside course content.',
+    defaultMessage: 'Permitir la participación en debates paralelos al contenido del curso.',
     description: 'A description of the new edX Discussions app.',
   },
   // Piazza
   'appName-piazza': {
     id: 'authoring.discussions.appList.appName-piazza',
-    defaultMessage: 'Piazza',
+    defaultMessage: 'Plaza',
     description: 'The name of the Piazza app.',
   },
   'appDescription-piazza': {
     id: 'authoring.discussions.appList.appDescription-piazza',
-    defaultMessage: 'Piazza is designed to connect students, TAs, and professors so every student can get the help they need when they need it.',
+    defaultMessage: 'Piazza está diseñada para conectar a estudiantes, ayudantes de TAs y profesores, de modo que cada estudiante pueda obtener la ayuda que necesita cuando la necesita.',
     description: 'A description of the Piazza app.',
   },
   'appDescription-yellowdig': {
     id: 'authoring.discussions.appList.appDescription-yellowdig',
-    defaultMessage: 'Yellowdig offers educators a gameful learning digital solution to improve student engagement by building learning communities for any course modality.',
+    defaultMessage: 'Yellowdig ofrece a los educadores una solución digital de aprendizaje lúdico para mejorar la participación de los estudiantes mediante la creación de comunidades de aprendizaje para cualquier modalidad de curso.',
     description: 'A description of the Yellowdig app.',
   },
   'appDescription-inscribe': {
     id: 'authoring.discussions.appList.appDescription-inscribe',
-    defaultMessage: 'InScribe leverages the power of community + artificial intelligence to connect individuals to the answers, resources, and people they need to succeed.',
+    defaultMessage: 'InScribe aprovecha el poder de la comunidad y la inteligencia artificial para conectar a las personas con las respuestas, los recursos y las personas que necesitan para tener éxito.',
     description: 'A description of the inscibe app.',
   },
   'appDescription-discourse': {
     id: 'authoring.discussions.appList.appDescription-discourse',
-    defaultMessage: 'Discourse is modern forum software for your community. Use it as a mailing list, discussion forum, long-form chat room, and more!',
+    defaultMessage: 'Discourse es un software de foro moderno para tu comunidad. ¡Úsalo como lista de correo, foro de discusión, sala de chat para conversaciones extensas y mucho más!',
     description: 'A description of the discourse app.',
   },
   'appDescription-ed-discuss': {
     id: 'authoring.discussions.appList.appDescription-ed-discus',
-    defaultMessage: 'Ed Discussion helps scale class communication in a beautiful and intuitive interface. Questions reach and benefit the whole class. Less emails, more time saved.',
+    defaultMessage: 'Ed Discussion facilita la comunicación en clase mediante una interfaz atractiva e intuitiva. Las preguntas llegan a toda la clase y benefician a todos. Menos correos electrónicos, más tiempo ahorrado.',
     description: 'A description of the Ed discus app.',
   },
   // Features
   'featureName-discussion-page': {
     id: 'authoring.discussions.featureName-discussion-page',
-    defaultMessage: 'Discussion page',
+    defaultMessage: 'Página de discusión',
     description: 'The name of a discussions feature.',
   },
   'featureName-embedded-course-sections': {
     id: 'authoring.discussions.featureName-embedded-course-sections',
-    defaultMessage: 'Embedded course sections',
+    defaultMessage: 'Secciones de curso integradas',
     description: 'The name of a discussions feature.',
   },
   'featureName-advanced-in-context-discussion': {
     id: 'authoring.discussions.featureName-advanced-in-context-discussion',
-    defaultMessage: 'Advanced in context discussion',
+    defaultMessage: 'Discusión avanzada en contexto',
     description: 'The name of a discussions feature.',
   },
   'featureName-anonymous-posting': {
@@ -201,7 +201,7 @@ const messages = defineMessages({
   },
   'featureName-simplified-in-context-discussion': {
     id: 'authoring.discussions.featureName-simplified-in-context-discussion',
-    defaultMessage: 'Simplified in-context discussion',
+    defaultMessage: 'Discusión simplificada en contexto',
     description: 'The name of a discussions feature.',
   },
   'featureName-user-mentions': {
@@ -211,7 +211,7 @@ const messages = defineMessages({
   },
   'featureName-wcag-2.1': {
     id: 'authoring.discussions.featureName-wcag-2.1',
-    defaultMessage: 'WCAG 2.1 support',
+    defaultMessage: 'Compatibilidad con WCAG 2.1',
     description: 'The name of a discussions feature.',
   },
   'featureName-wcag-2.0-support': {
@@ -236,7 +236,7 @@ const messages = defineMessages({
   },
   'featureType-common': {
     id: 'authoring.discussions.common-support',
-    defaultMessage: 'Commonly requested',
+    defaultMessage: 'Solicitado con frecuencia',
     description: 'The type of a discussions feature.',
   },
   hideDiscussionTab: {
