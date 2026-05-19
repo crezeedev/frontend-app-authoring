@@ -20,7 +20,7 @@ const messages = defineMessages({
   },
   ok: {
     id: "authoring.discussions.ok",
-    defaultMessage: "De acuerdp",
+    defaultMessage: "De acuerdo",
     description: "Button allowing the user to acknowledge the provider change.",
   },
   cancel: {

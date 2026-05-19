@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   settings: {
     id: 'authoring.discussions.settings',
-    defaultMessage: 'Settings',
+    defaultMessage: 'Ajustes',
     description: 'A label for the second step of the app configuration stepper.',
   },
   configure: {
@@ -12,31 +12,31 @@ const messages = defineMessages({
   },
   configureApp: {
     id: 'authoring.discussions.configure.app',
-    defaultMessage: 'Configure {name}',
+    defaultMessage: 'Configurar {name}',
   },
   backButton: {
     id: 'authoring.discussions.backButton',
-    defaultMessage: 'Back',
+    defaultMessage: 'Atrás',
     description: 'Button allowing the user to return to discussion app selection.',
   },
   applyButton: {
     id: 'authoring.discussions.applyButton',
-    defaultMessage: 'Apply',
+    defaultMessage: 'Aplica',
     description: 'Button allowing the user to submit their discussion configuration.',
   },
   applyingButton: {
     id: 'authoring.discussions.applyingButton',
-    defaultMessage: 'Applying',
+    defaultMessage: 'Aplicando',
     description: 'Button label when the discussion configuration is being submitted.',
   },
   appliedButton: {
     id: 'authoring.discussions.appliedButton',
-    defaultMessage: 'Applied',
+    defaultMessage: 'Aplicado',
     description: 'Button label when the discussion configuration has been successfully submitted.',
   },
   noProviderSwitchAfterCourseStarted: {
     id: 'authoring.discussions.noProviderSwitchAfterCourseStarted',
-    defaultMessage: "Discussion provider can't be changed after course has started, please reach out to partner support.",
+    defaultMessage: "Una vez iniciado el curso, no se puede cambiar el proveedor del foro de debate. Póngase en contacto con el servicio de asistencia para socios.",
     description: "Informs the user that the provider can't be changed after the course has started.",
   },
   providerSelection: {
@@ -46,7 +46,7 @@ const messages = defineMessages({
   },
   Incomplete: {
     id: 'authoring.discussions.Incomplete',
-    defaultMessage: 'Incomplete',
+    defaultMessage: 'Incompleta',
     description: 'A description for the second step of the app configuration stepper.',
   },
 });
