@@ -3,27 +3,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.heading',
-    defaultMessage: 'Pages & Resources',
+    defaultMessage: 'Páginas y recursos',
   },
   settings: {
     id: 'course-authoring.pages-resources.resources.settings.button',
-    defaultMessage: 'settings',
+    defaultMessage: 'Ajustes',
   },
   viewLiveButton: {
     id: 'course-authoring.pages-resources.viewLive.button',
-    defaultMessage: 'View live',
+    defaultMessage: 'Ver en directo',
   },
   errorShowingConfiguration: {
     id: 'course-authoring.pages-resources.courseAppPlugin.errorMessage',
-    defaultMessage: 'An error occurred when loading the configuration UI for that app.',
+    defaultMessage: 'Se produjo un error al cargar la interfaz de configuración de esa aplicación.',
   },
   enabled: {
     id: 'course-authoring.badge.enabled',
-    defaultMessage: 'Enabled',
+    defaultMessage: 'Activada',
   },
   contentPermissions: {
     id: 'course-authoring.pages-resources.content-permissions.heading',
-    defaultMessage: 'Content permissions',
+    defaultMessage: 'Permisos de contenido',
   },
 });
 
