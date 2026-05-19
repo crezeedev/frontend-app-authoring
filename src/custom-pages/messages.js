@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   errorAlertMessage: {
     id: 'course-authoring.custom-pages.errorAlert.message',
-    defaultMessage: 'Unable to {actionName} page. Please try again.',
+    defaultMessage: 'No puedo {actionName} página. Por favor, inténtelo de nuevo.',
   },
   note: {
     id: 'course-authoring.custom-pages.note',
@@ -60,27 +60,27 @@ const messages = defineMessages({
   },
   studentViewModalTitle: {
     id: 'course-authoring.custom-pages.studentViewModal.title',
-    defaultMessage: 'Pages in Your Course',
+    defaultMessage: 'Páginas de tu curso',
   },
   studentViewModalBody: {
     id: 'course-authoring.custom-pages.studentViewModal.Body',
-    defaultMessage: "Pages appear in your course's top navigation bar. The default pages (Home, Course, Discussion, Wiki, and Progress) are followed by textbooks and custom pages.",
+    defaultMessage: "Las páginas aparecen en la barra de navegación superior del curso. A las páginas predeterminadas (Inicio, Curso, Debate, Wiki y Progreso) les siguen los libros de texto y las páginas personalizadas.",
   },
   newPageTitle: {
     id: 'course-authoring.custom-pages.page.newPage.title',
-    defaultMessage: 'Empty',
+    defaultMessage: 'Vacía',
   },
   editTooltipContent: {
     id: 'course-authoring.custom-pages.editTooltip.content',
-    defaultMessage: 'Edit',
+    defaultMessage: 'Editar',
   },
   deleteTooltipContent: {
     id: 'course-authoring.custom-pages.deleteTooltip.content',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Eliminar',
   },
   visibilityTooltipContent: {
     id: 'course-authoring.custom-pages.visibilityTooltip.content',
-    defaultMessage: 'Hide/show page from learners',
+    defaultMessage: 'Ocultar/mostrar la página a los alumnos',
   },
   addPageBodyLabel: {
     id: 'course-authoring.custom-pages.body.addPage.label',
@@ -88,27 +88,27 @@ const messages = defineMessages({
   },
   addingPageBodyLabel: {
     id: 'course-authoring.custom-pages.body.addingPage.label',
-    defaultMessage: 'Adding a new page',
+    defaultMessage: 'Agregar una nueva página',
   },
   deleteConfirmationTitle: {
     id: 'course-authoring.custom-pages..deleteConfirmation.title',
-    defaultMessage: 'Delete Page Confirmation',
+    defaultMessage: 'Confirmación de eliminación de página',
   },
   deleteConfirmationMessage: {
     id: 'course-authoring.custom-pages..deleteConfirmation.message',
-    defaultMessage: 'Are you sure you want to delete this page? This action cannot be undone.',
+    defaultMessage: '¿Seguro que quieres eliminar esta página? Esta acción no se puede deshacer.',
   },
   deletePageLabel: {
     id: 'course-authoring.custom-pages.deleteConfirmation.deletePage.label',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Eliminar',
   },
   deletingPageBodyLabel: {
     id: 'course-authoring.custom-pages.deleteConfirmation.deletingPage.label',
-    defaultMessage: 'Deleting',
+    defaultMessage: 'Eliminando',
   },
   cancelButtonLabel: {
     id: 'course-authoring.custom-pages.deleteConfirmation.cancelButton.label',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Cancelar',
   },
 });
 
