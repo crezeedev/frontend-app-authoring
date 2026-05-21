@@ -11,7 +11,7 @@ const descriptions = {
   },
   breadcrumbPagesAndResources: {
     id: 'course-authoring.textbooks.header.breadcrumb.pages-and-resources',
-    defaultMessage: 'Páginas y recursos',
+    defaultMessage: 'Páginas y Recursos',
     description: 'Breadcrumb for pages and resources',
   },
   breadcrumbAriaLabel: {
