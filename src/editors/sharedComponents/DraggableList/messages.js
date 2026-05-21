@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   tooltipContent: {
     id: 'authoring.draggableList.tooltip.content',
-    defaultMessage: 'Drag to reorder',
+    defaultMessage: 'Arrastra para reordenar',
     description: 'Tooltip content for drag indicator icon',
   },
 });
