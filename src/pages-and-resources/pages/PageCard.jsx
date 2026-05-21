@@ -22,6 +22,16 @@ const CoursePageShape = PropTypes.shape({
 
 export { CoursePageShape };
 
+const translations = {
+  "Allow learners to highlight passages and make notes right in the course.":
+    "Permite a los estudiantes resaltar pasajes y tomar notas directamente en el curso.",
+
+  "Keep learners engaged and on track throughout the course.":
+    "Mantén a los estudiantes comprometidos y al día durante el curso.",
+};
+
+const translate = (text) => translations[text] || text;
+
 const PageCard = ({
   page,
   settingButton,
@@ -50,7 +60,7 @@ const PageCard = ({
       />
       <Card.Body>
         <Card.Section>
-          {page.description}
+          {translate(page.description)}
         </Card.Section>
       </Card.Body>
     </Card>
