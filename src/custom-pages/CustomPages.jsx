@@ -116,8 +116,8 @@ const CustomPages = ({
           <Breadcrumb
             ariaLabel="Custom Page breadcrumbs"
             links={[
-              { label: 'Content', href: `${config.STUDIO_BASE_URL}/course/${courseId}` },
-              { label: 'Pages and Resources', href: getPagePath(courseId, 'true', 'tabs') },
+              { label: 'Contenido', href: `${config.STUDIO_BASE_URL}/course/${courseId}` },
+              { label: 'Páginas y Recursos', href: getPagePath(courseId, 'true', 'tabs') },
             ]}
           />
         </div>
