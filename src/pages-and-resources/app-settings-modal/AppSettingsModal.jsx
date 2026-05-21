@@ -32,16 +32,6 @@ import { PagesAndResourcesContext } from '../PagesAndResourcesProvider';
 import AppSettingsModalBase from './AppSettingsModalBase';
 import messages from './messages';
 
-const translations = {
-  Progress: 'Progreso',
-  Activated: 'Activada',
-
-  'Keep learners engaged and on track throughout the course.':
-    'Mantén a los estudiantes comprometidos y al día durante el curso.',
-};
-
-const translate = (text) => translations[text] || text;
-
 const AppSettingsModal = ({
   appId,
   title,
@@ -166,17 +156,17 @@ const AppSettingsModal = ({
                   checked={formikProps.values.enabled}
                   label={(
                     <div className="d-flex align-items-center">
-                      {translate(enableAppLabel)}
+                      {enableAppLabel}
                       {formikProps.values.enabled && (
                         <Badge className="ml-2" variant="success" data-testid="enable-badge">
-                          {translate(formatMessage(messages.enabled))}
+                          {formatMessage(messages.enabled)}
                         </Badge>
                       )}
                     </div>
                   )}
                   helpText={(
                     <div>
-                      <p>{translate(enableAppHelp)}</p>
+                      <p>{enableAppHelp}</p>
                       <span className="py-3">{learnMoreLink}</span>
                     </div>
                   )}
