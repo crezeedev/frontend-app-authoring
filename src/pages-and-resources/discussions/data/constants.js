@@ -27,9 +27,9 @@ export const discussionRestriction = {
 };
 
 export const discussionRestrictionLabels = {
-  OFF: 'Off',
-  ON: 'On',
-  SCHEDULED: 'Scheduled',
+  OFF: 'Apagado',
+  ON: 'Encendido',
+  SCHEDULED: 'Programado',
 };
 
 export const discussionRestrictionOptions = [
