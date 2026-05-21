@@ -23,31 +23,31 @@ const messages = defineMessages({
   },
   enabledBadgeLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.enabled-badge.label',
-    defaultMessage: 'Enabled',
+    defaultMessage: 'Activada',
     description: 'Label for badge that show users that a setting is enabled',
   },
   cancelLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.cancel-button.label',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Cancelar',
     description: 'Label for button that cancels user changes',
   },
   saveLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.save-button.label',
-    defaultMessage: 'Save',
+    defaultMessage: 'Guardar',
     description: 'Label for button that saves user changes',
   },
   pendingSaveLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.pending-save-button.label',
-    defaultMessage: 'Saving',
+    defaultMessage: 'Guardando',
     description: 'Label for button that has pending api save calls',
   },
   errorSavingTitle: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.save-error.title',
-    defaultMessage: 'We couldn\'t apply your changes.',
+    defaultMessage: 'Nosotros no pudimos aplicar sus cambios.',
   },
   errorSavingMessage: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.save-error.message',
-    defaultMessage: 'Please check your entries and try again.',
+    defaultMessage: 'Por favor, revise sus entradas e inténtelo de nuevo.',
   },
 });
 
