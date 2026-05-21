@@ -38,7 +38,7 @@ const messages = defineMessages({
   },
   addFilesButtonLabel: {
     id: 'course-authoring.files-and-upload.addFiles.button.label',
-    defaultMessage: 'Add {fileType}s',
+    defaultMessage: 'Agregar Archivos',
     description: 'Label for add files button, name changes based on page',
   },
   actionsButtonLabel: {
