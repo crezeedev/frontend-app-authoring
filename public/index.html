@@ -9,4 +9,41 @@
   <body>
     <div id="root"></div>
   </body>
+  <script>
+  (function () {
+    const translations = {
+      "Drag and drop your file here or click to upload.":
+        "Arrastra y suelta tu archivo aquí o haz clic para subirlo."
+    };
+
+    function translateDropzoneText() {
+      const dropzones = document.querySelectorAll('[data-testid="dropzone"]');
+
+      dropzones.forEach((dz) => {
+        const p = dz.querySelector('p');
+
+        if (!p) return;
+
+        const text = p.textContent?.trim();
+
+        if (translations[text]) {
+          p.textContent = translations[text];
+        }
+      });
+    }
+
+    // Ejecutar cuando carga el DOM
+    document.addEventListener('DOMContentLoaded', translateDropzoneText);
+
+    // Por si el componente aparece después (React render async)
+    const observer = new MutationObserver(() => {
+      translateDropzoneText();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  })();
+</script>
 </html>

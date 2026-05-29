@@ -3,13 +3,13 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   spinnerScreenReaderText: {
     id: 'authoring.videoEditor.spinnerScreenReaderText',
-    defaultMessage: 'loading',
-    description: 'Loading message for spinner screenreader text.',
+    defaultMessage: 'cargando',
+    description: 'Mensaje de carga para el lector de pantalla del spinner.',
   },
   replaceVideoButtonLabel: {
     id: 'authoring.videoEditor.replaceVideoButtonLabel',
-    defaultMessage: 'Replace video',
-    description: 'Text of the replace video button to return to the video gallery',
+    defaultMessage: 'Reemplazar video',
+    description: 'Texto del botón para reemplazar el video y volver a la galería de videos',
   },
 });
 

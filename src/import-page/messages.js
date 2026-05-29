@@ -1,29 +1,57 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
-  pageTitle: {
-    id: 'course-authoring.import.page.title',
-    defaultMessage: '{headingTitle} | {courseName} | {siteName}',
+  stepperUploadingTitle: {
+    id: 'course-authoring.import.stepper.title.uploading',
+    defaultMessage: 'Subiendo',
   },
-  headingTitle: {
-    id: 'course-authoring.import.heading.title',
-    defaultMessage: 'Course import',
+  stepperUnpackingTitle: {
+    id: 'course-authoring.import.stepper.title.unpacking',
+    defaultMessage: 'Descomprimiendo',
   },
-  headingSubtitle: {
-    id: 'course-authoring.import.heading.subtitle',
-    defaultMessage: 'Tools',
+  stepperVerifyingTitle: {
+    id: 'course-authoring.import.stepper.title.verifying',
+    defaultMessage: 'Verificando',
   },
-  description1: {
-    id: 'course-authoring.import.description1',
-    defaultMessage: 'Be sure you want to import a course before continuing. The contents of the imported course will replace the contents of the existing course. You cannot undo a course import. Before you proceed, we recommend that you export the current course, so that you have a backup copy of it.',
+  stepperUpdatingTitle: {
+    id: 'course-authoring.import.stepper.title.updating',
+    defaultMessage: 'Actualizando curso',
   },
-  description2: {
-    id: 'course-authoring.import.description2',
-    defaultMessage: 'The course that you import must be in a .tar.gz file (that is, a .tar file compressed with GNU Zip). This .tar.gz file must contain a course.xml file. It may also contain other files.',
+  stepperSuccessTitle: {
+    id: 'course-authoring.import.stepper.title.success',
+    defaultMessage: 'Éxito',
   },
-  description3: {
-    id: 'course-authoring.import.description3',
-    defaultMessage: 'The import process has five stages. During the first two stages, you must stay on this page. You can leave this page after the unpacking stage has completed. We recommend, however, that you don\'t make important changes to your course until the import operation has completed.',
+  stepperUploadingDescription: {
+    id: 'course-authoring.import.stepper.description.uploading',
+    defaultMessage: 'Transfiriendo tu archivo a nuestros servidores',
+  },
+  stepperUnpackingDescription: {
+    id: 'course-authoring.import.stepper.description.unpacking',
+    defaultMessage: 'Expandiendo y preparando la estructura de carpetas/archivos (puedes salir de esta página con seguridad, pero evita hacer cambios importantes en el contenido hasta que termine la importación)',
+  },
+  stepperVerifyingDescription: {
+    id: 'course-authoring.import.stepper.description.verifying',
+    defaultMessage: 'Revisando semántica, sintaxis y datos requeridos',
+  },
+  stepperUpdatingDescription: {
+    id: 'course-authoring.import.stepper.description.updating',
+    defaultMessage: 'Integrando el contenido importado en este curso. Este proceso puede tardar más en cursos grandes.',
+  },
+  stepperSuccessDescription: {
+    id: 'course-authoring.import.stepper.description.success',
+    defaultMessage: 'El contenido importado ha sido integrado en este curso',
+  },
+  viewOutlineButton: {
+    id: 'course-authoring.import.stepper.button.outline',
+    defaultMessage: 'Ver esquema actualizado',
+  },
+  defaultErrorMessage: {
+    id: 'course-authoring.import.stepper.error.default',
+    defaultMessage: 'Error al importar el curso',
+  },
+  stepperHeaderTitle: {
+    id: 'course-authoring.import.stepper.header.title',
+    defaultMessage: 'Estado de importación del curso',
   },
 });
 
