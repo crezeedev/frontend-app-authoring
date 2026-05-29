@@ -3,27 +3,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   title: {
     id: 'course-authoring.course-outline.highlights-modal.title',
-    defaultMessage: 'Highlights for {title}',
+    defaultMessage: 'Destacados para {title}',
   },
   description: {
     id: 'course-authoring.course-outline.highlights-modal.description',
-    defaultMessage: 'Enter 3-5 highlights to include in the email message that learners receive for this section (250 character limit). For more information and an example of the email template, read our {documentation}.',
+    defaultMessage: 'Ingresa de 3 a 5 destacados para incluir en el mensaje de correo electrónico que los estudiantes recibirán para esta sección (límite de 250 caracteres). Para más información y un ejemplo de la plantilla de correo, consulta nuestra {documentation}.',
   },
   documentationLink: {
     id: 'course-authoring.course-outline.highlights-modal.documentation-link',
-    defaultMessage: 'documentation',
+    defaultMessage: 'documentación',
   },
   highlight: {
     id: 'course-authoring.course-outline.highlights-modal.highlight',
-    defaultMessage: 'Highlight {index}',
+    defaultMessage: 'Destacado {index}',
   },
   cancelButton: {
     id: 'course-authoring.course-outline.highlights-modal.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Cancelar',
   },
   saveButton: {
     id: 'course-authoring.course-outline.highlights-modal.button.save',
-    defaultMessage: 'Save',
+    defaultMessage: 'Guardar',
   },
 });
 

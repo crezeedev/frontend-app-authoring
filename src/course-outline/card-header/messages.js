@@ -3,79 +3,79 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   expandTooltip: {
     id: 'course-authoring.course-outline.card.expandTooltip',
-    defaultMessage: 'Collapse/Expand this card',
+    defaultMessage: 'Contraer/Expandir esta tarjeta',
   },
   statusBadgeLive: {
     id: 'course-authoring.course-outline.card.status-badge.live',
-    defaultMessage: 'Live',
+    defaultMessage: 'Activo',
   },
   statusBadgeGated: {
     id: 'course-authoring.course-outline.card.status-badge.gated',
-    defaultMessage: 'Gated',
+    defaultMessage: 'Restringido',
   },
   statusBadgePublishedNotLive: {
     id: 'course-authoring.course-outline.card.status-badge.published-not-live',
-    defaultMessage: 'Published not live',
+    defaultMessage: 'Publicado pero no activo',
   },
   statusBadgeStaffOnly: {
     id: 'course-authoring.course-outline.card.status-badge.staff-only',
-    defaultMessage: 'Staff only',
+    defaultMessage: 'Solo para el personal',
   },
   statusBadgeDraft: {
     id: 'course-authoring.course-outline.card.status-badge.draft',
-    defaultMessage: 'Draft',
+    defaultMessage: 'Borrador',
   },
   statusBadgeUnpublishedChanges: {
     id: 'course-authoring.course-outline.card.status-badge.draft-unpublished-changes',
-    defaultMessage: 'Draft (Unpublished changes)',
+    defaultMessage: 'Borrador (cambios no publicados)',
   },
   altButtonEdit: {
     id: 'course-authoring.course-outline.card.button.edit.alt',
-    defaultMessage: 'Edit',
+    defaultMessage: 'Editar',
   },
   menuPublish: {
     id: 'course-authoring.course-outline.card.menu.publish',
-    defaultMessage: 'Publish',
+    defaultMessage: 'Publicar',
   },
   menuConfigure: {
     id: 'course-authoring.course-outline.card.menu.configure',
-    defaultMessage: 'Configure',
+    defaultMessage: 'Configurar',
   },
   menuDuplicate: {
     id: 'course-authoring.course-outline.card.menu.duplicate',
-    defaultMessage: 'Duplicate',
+    defaultMessage: 'Duplicar',
   },
   menuMoveUp: {
     id: 'course-authoring.course-outline.card.menu.moveup',
-    defaultMessage: 'Move up',
+    defaultMessage: 'Mover arriba',
   },
   menuMoveDown: {
     id: 'course-authoring.course-outline.card.menu.movedown',
-    defaultMessage: 'Move down',
+    defaultMessage: 'Mover abajo',
   },
   menuDelete: {
     id: 'course-authoring.course-outline.card.menu.delete',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Eliminar',
   },
   menuCopy: {
     id: 'course-authoring.course-outline.card.menu.copy',
-    defaultMessage: 'Copy to clipboard',
+    defaultMessage: 'Copiar al portapapeles',
   },
   menuProctoringLinkText: {
     id: 'course-authoring.course-outline.card.menu.proctoring-settings',
-    defaultMessage: 'Proctoring settings',
+    defaultMessage: 'Configuración de supervisión',
   },
   proctoringLinkTooltip: {
     id: 'course-authoring.course-outline.card.menu.proctoring-settings-tooltip',
-    defaultMessage: 'Proctoring settings',
+    defaultMessage: 'Configuración de supervisión',
   },
   discussionEnabledBadgeText: {
     id: 'course-authoring.course-outline.card.badge.discussionEnabled',
-    defaultMessage: 'Discussions enabled',
+    defaultMessage: 'Discusiones habilitadas',
   },
   menuManageTags: {
     id: 'course-authoring.course-outline.card.menu.manageTags',
-    defaultMessage: 'Manage tags',
+    defaultMessage: 'Administrar etiquetas',
   },
 });
 

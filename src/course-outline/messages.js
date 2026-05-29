@@ -3,46 +3,46 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.course-outline.headingTitle',
-    defaultMessage: 'Course outline',
+    defaultMessage: 'Esquema del curso',
   },
   headingSubtitle: {
     id: 'course-authoring.course-outline.subTitle',
-    defaultMessage: 'Content',
+    defaultMessage: 'Contenido',
   },
   alertSuccessTitle: {
     id: 'course-authoring.course-outline.reindex.alert.success.title',
-    defaultMessage: 'Course index',
+    defaultMessage: 'Índice del curso',
   },
   alertSuccessDescription: {
     id: 'course-authoring.course-outline.reindex.alert.success.description',
-    defaultMessage: 'Course has been successfully reindexed.',
+    defaultMessage: 'El curso ha sido reindexado correctamente.',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.course-outline.reindex.alert.success.aria.labelledby',
-    defaultMessage: 'alert-confirmation-title',
+    defaultMessage: 'titulo-confirmacion-alerta',
   },
   alertSuccessAriaDescribedby: {
     id: 'course-authoring.course-outline.reindex.alert.success.aria.describedby',
-    defaultMessage: 'alert-confirmation-description',
+    defaultMessage: 'descripcion-confirmacion-alerta',
   },
   newSectionButton: {
     id: 'course-authoring.course-outline.section-list.button.new-section',
-    defaultMessage: 'New section',
+    defaultMessage: 'Nueva sección',
   },
   exportTagsCreatingToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.creating.message',
-    defaultMessage: 'Please wait. Creating export file for course tags...',
-    description: 'In progress message in toast when exporting tags of a course',
+    defaultMessage: 'Por favor espera. Creando archivo de exportación para las etiquetas del curso...',
+    description: 'Mensaje de progreso en el toast al exportar etiquetas de un curso',
   },
   exportTagsSuccessToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.success.message',
-    defaultMessage: 'Course tags exported successfully',
-    description: 'Success message in toast when exporting tags of a course',
+    defaultMessage: 'Las etiquetas del curso se exportaron correctamente',
+    description: 'Mensaje de éxito en el toast al exportar etiquetas de un curso',
   },
   exportTagsErrorToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.error.message',
-    defaultMessage: 'An error has occurred creating the file',
-    description: 'Error message in toast when exporting tags of a course',
+    defaultMessage: 'Ha ocurrido un error al crear el archivo',
+    description: 'Mensaje de error en el toast al exportar etiquetas de un curso',
   },
 });
 
