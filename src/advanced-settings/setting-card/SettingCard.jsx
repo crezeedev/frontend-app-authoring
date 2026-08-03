@@ -146,7 +146,18 @@ const settingsTranslations = {
   'upstream_display_name': 'Nombre upstream',
   'upstream_max_attempts': 'Máximo de intentos upstream',
   'upstream_version': 'Versión upstream',
-  'upstream_version_declined': 'Versión upstream rechazada'
+  'upstream_version_declined': 'Versión upstream rechazada',
+  'CSS Class for Course Reruns': 'Clase CSS para Repeticiones de Curso',
+  'Certificate Web/HTML View Enabled': 'Vista de certificado Web/HTML habilitada',
+  'Certificates Downloadable Before End': 'Certificados descargables antes del final',
+  'Course Editor': 'Editor de cursos',
+  'Course Survey URL': 'URL de la encuesta del curso',
+  'Discussion Forum External Link': 'Enlace externo del foro de discusión',
+  'Hide Progress Tab': 'Ocultar pestaña de progreso',
+  'LaTeX Source File Name': 'Nombre del archivo fuente de LaTeX',
+  'Pre-Course Survey Name': 'Nombre de la encuesta previa al curso',
+  'Pre-Course Survey Required': 'Encuesta previa al curso requerida',
+  'XQA Key': 'Clave XQA'
 };
 
 const translatedDisplayName =
